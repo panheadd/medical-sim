@@ -1,0 +1,130 @@
+package com.yunus.ai;
+
+public class PromptGenerator {
+    private static PromptGenerator promptGenerator;
+    enum Mood1{
+        PASSIVE,
+        NORMAL,
+        AGGRESSIVE
+    }
+    enum Mood2{
+        QUIET,
+        NORMAL,
+        CHATTY
+    }
+    enum Mood3{
+        NERVOUS,
+        NORMAL,
+        CONFIDENT
+    }
+    enum Mood4{
+        GUARDED,
+        NORMAL,
+        OPEN
+    }
+    private String category;
+    private final String basePrompt = "Sen bir hasta rolündesin. Kullanıcı tıp öğrencisi ve seninle konuşarak hastalığı teşhis edecek. Hasta rolünde konuş, sorulara hastaymış gibi cevap ver. Gerçekçi davran, Rolü asla bırakma, karakterde kal. Konuşmayı doğal sürdür.";
+    private String finalPrompt;
+    private Mood1 mood1 = Mood1.NORMAL ;
+    private Mood2 mood2 = Mood2.NORMAL;
+    private Mood3 mood3 = Mood3.NORMAL ;
+    private Mood4 mood4 = Mood4.NORMAL;
+
+    public void setMood1(Mood1 mood1){
+        this.mood1 = mood1;
+    }
+    public void setMood2(Mood2 mood2){
+        this.mood2 = mood2;
+    }
+    public void setMood3(Mood3 mood3){
+        this.mood3 = mood3;
+    }
+    public void setMood4(Mood4 mood4){
+        this.mood4 = mood4;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    private PromptGenerator(){}
+    public static PromptGenerator getPromptGeneratorInstance(){
+        if (promptGenerator == null){
+            promptGenerator = new PromptGenerator();
+        }
+        return promptGenerator;
+    }
+    public String generatePrompt(){
+        finalPrompt = basePrompt;
+        if (generateCategoryPrompt() != null){
+            finalPrompt = finalPrompt+generateCategoryPrompt();
+        }
+        if (generateMoodPrompt() != null){
+            finalPrompt = finalPrompt+generateMoodPrompt();
+        }
+        return finalPrompt;
+    }
+
+    private String generateMoodPrompt(){
+        String moodPrompt = " Hasta olarak senin kişilik özelliklerin : ";
+        if (mood1 == Mood1.NORMAL && mood2 == Mood2.NORMAL && mood3 == Mood3.NORMAL && mood4 == Mood4.NORMAL){
+            return null;
+        }
+        else{
+            switch(mood1){
+                case PASSIVE:
+                    moodPrompt = moodPrompt+"Pasif, ";
+                    break;
+                case AGGRESSIVE:
+                    moodPrompt = moodPrompt+"Agresif, ";
+                    break;
+                case NORMAL:
+                    break;
+            }
+            switch(mood2){
+                case QUIET:
+                    moodPrompt = moodPrompt+"Sessiz(Az Konuşan), ";
+                    break;
+                case CHATTY:
+                    moodPrompt = moodPrompt+"Konuşkan, ";
+                    break;
+                case NORMAL:
+                    break;
+            }
+            switch(mood3){
+                case NERVOUS:
+                    moodPrompt = moodPrompt+"Endişeli, ";
+                    break;
+                case CONFIDENT:
+                    moodPrompt = moodPrompt+"Kendinden Emin ";
+                    break;
+                case NORMAL:
+                    break;
+            }
+            switch(mood4){
+                case GUARDED:
+                    moodPrompt = moodPrompt+"Kapalı(İhtiyatlı), ";
+                    break;
+                case OPEN:
+                    moodPrompt = moodPrompt+"Açık(İhtiyatsız), ";
+                    break;
+                case NORMAL:
+                    break;
+            }
+            moodPrompt = moodPrompt+".";
+            return moodPrompt;
+        }
+    }
+
+    private String generateCategoryPrompt(){
+        String categoryPrompt;
+        if (this.category == null){
+            return null;
+        }
+        else {
+            categoryPrompt = " Hastalığın "+category+" ile ilgili.";
+            return categoryPrompt;
+        }
+    }
+
+}
