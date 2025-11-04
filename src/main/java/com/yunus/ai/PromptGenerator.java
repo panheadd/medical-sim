@@ -22,6 +22,12 @@ public class PromptGenerator {
         NORMAL,
         OPEN
     }
+
+    enum Difficulty{
+        EASY,
+        NORMAL,
+        HARD
+    }
     private String category;
     private final String basePrompt = "Sen bir hasta rolündesin. Kullanıcı tıp öğrencisi ve seninle konuşarak hastalığı teşhis edecek. Hasta rolünde konuş, sorulara hastaymış gibi cevap ver. Gerçekçi davran, Rolü asla bırakma, karakterde kal. Konuşmayı doğal sürdür.";
     private String finalPrompt;
@@ -29,6 +35,7 @@ public class PromptGenerator {
     private Mood2 mood2 = Mood2.NORMAL;
     private Mood3 mood3 = Mood3.NORMAL ;
     private Mood4 mood4 = Mood4.NORMAL;
+    private Difficulty difficulty = Difficulty.NORMAL;
 
     public void setMood1(Mood1 mood1){
         this.mood1 = mood1;
@@ -124,6 +131,30 @@ public class PromptGenerator {
         else {
             categoryPrompt = " Hastalığın "+category+" ile ilgili.";
             return categoryPrompt;
+        }
+    }
+
+    private String generateDifficultyPrompt(){
+        String difficultyPrompt;
+        if (difficulty != null){
+            switch (difficulty){
+                case EASY :
+                    difficultyPrompt = "Hastalığın kolay teşhis edilebilen bir hastalık olacak.";
+                    break;
+                case NORMAL:
+                    difficultyPrompt = "Hastalığın ne zor ne de kolay ,normal zorlukta teşhis edilebilen bir hastalık olacak.";
+                    break;
+                case HARD:
+                    difficultyPrompt = "Hastalığın zor teşhis edilebilen bir hastalık olacak.";
+                    break;
+                default:
+                    difficultyPrompt = null;
+                    break;
+            }
+            return difficultyPrompt;
+        }
+        else{
+            return null;
         }
     }
 
