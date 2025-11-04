@@ -56,6 +56,14 @@ public class PromptGenerator {
         this.mood4 = mood4;
     }
 
+    public void setDifficulty(Difficulty difficulty) {
+        this.difficulty = difficulty;
+    }
+
+    public void setRarity(Rarity rarity) {
+        this.rarity = rarity;
+    }
+
     public void setCategory(String category) {
         this.category = category;
     }
