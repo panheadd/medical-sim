@@ -116,10 +116,56 @@ public class MoodPage extends JPanel {
         row4.add(normalbutton4);
         row4.add(openButton);
 
+        JPanel row5 = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
+        JRadioButton easyButton = new JRadioButton("Kolay");
+        JRadioButton normalbutton5 = new JRadioButton("Normal");
+        JRadioButton hardButton = new JRadioButton("Zor");
+        easyButton.setFont(moodFont);
+        normalbutton5.setFont(moodFont);
+        hardButton.setFont(moodFont);
+
+        easyButton.addActionListener(e -> promptGenerator.setDifficulty(PromptGenerator.Difficulty.EASY));
+        normalbutton5.addActionListener(e -> promptGenerator.setDifficulty(PromptGenerator.Difficulty.NORMAL));
+        hardButton.addActionListener(e -> promptGenerator.setDifficulty(PromptGenerator.Difficulty.HARD));
+
+        ButtonGroup group5 = new ButtonGroup();
+        group5.add(easyButton);
+        group5.add(normalbutton5);
+        group5.add(hardButton);
+
+        row5.add(easyButton);
+        row5.add(normalbutton5);
+        row5.add(hardButton);
+
+
+        JPanel row6 = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
+        JRadioButton commonButton = new JRadioButton("Yaygın");
+        JRadioButton normalbutton6 = new JRadioButton("Normal");
+        JRadioButton rareButton = new JRadioButton("Ender");
+        commonButton.setFont(moodFont);
+        normalbutton6.setFont(moodFont);
+        rareButton.setFont(moodFont);
+
+        commonButton.addActionListener(e -> promptGenerator.setRarity(PromptGenerator.Rarity.COMMON));
+        normalbutton6.addActionListener(e -> promptGenerator.setRarity(PromptGenerator.Rarity.NORMAL));
+        rareButton.addActionListener(e -> promptGenerator.setRarity(PromptGenerator.Rarity.RARE));
+
+        ButtonGroup group6 = new ButtonGroup();
+        group6.add(commonButton);
+        group6.add(normalbutton6);
+        group6.add(rareButton);
+
+        row6.add(commonButton);
+        row6.add(normalbutton6);
+        row6.add(rareButton);
+
         centerPanel.add(row1);
         centerPanel.add(row2);
         centerPanel.add(row3);
         centerPanel.add(row4);
+        centerPanel.add(row5);
+        centerPanel.add(row6);
+
 
         add(centerPanel, BorderLayout.CENTER);
 
