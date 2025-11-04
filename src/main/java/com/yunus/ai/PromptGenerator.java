@@ -28,6 +28,11 @@ public class PromptGenerator {
         NORMAL,
         HARD
     }
+    enum Rarity{
+        COMMON,
+        NORMAL,
+        RARE
+    }
     private String category;
     private final String basePrompt = "Sen bir hasta rolündesin. Kullanıcı tıp öğrencisi ve seninle konuşarak hastalığı teşhis edecek. Hasta rolünde konuş, sorulara hastaymış gibi cevap ver. Gerçekçi davran, Rolü asla bırakma, karakterde kal. Konuşmayı doğal sürdür.";
     private String finalPrompt;
@@ -36,6 +41,7 @@ public class PromptGenerator {
     private Mood3 mood3 = Mood3.NORMAL ;
     private Mood4 mood4 = Mood4.NORMAL;
     private Difficulty difficulty = Difficulty.NORMAL;
+    private Rarity rarity = Rarity.NORMAL;
 
     public void setMood1(Mood1 mood1){
         this.mood1 = mood1;
@@ -142,7 +148,7 @@ public class PromptGenerator {
                     difficultyPrompt = "Hastalığın kolay teşhis edilebilen bir hastalık olacak.";
                     break;
                 case NORMAL:
-                    difficultyPrompt = "Hastalığın ne zor ne de kolay ,normal zorlukta teşhis edilebilen bir hastalık olacak.";
+                    difficultyPrompt = "Hastalığın ne zor ne de kolay, normal zorlukta teşhis edilebilen bir hastalık olacak.";
                     break;
                 case HARD:
                     difficultyPrompt = "Hastalığın zor teşhis edilebilen bir hastalık olacak.";
@@ -158,4 +164,27 @@ public class PromptGenerator {
         }
     }
 
+    private String generateRarityPrompt(){
+        String rarityPrompt;
+        if (rarity != null){
+            switch (rarity){
+                case COMMON:
+                    rarityPrompt = "Hastalığın yaygın rastlanan bir hastalık olacak.";
+                    break;
+                case NORMAL:
+                    rarityPrompt = "Hastalığın ne yaygın ne de ender, normal sıklıkta rastalanan bir hastalık olacak.";
+                    break;
+                case RARE:
+                    rarityPrompt = "Hastalığın ender rastlanan bir hastalık olacak.";
+                    break;
+                default:
+                    rarityPrompt = null;
+                    break;
+            }
+            return rarityPrompt;
+        }
+        else{
+            return null;
+        }
+    }
 }
