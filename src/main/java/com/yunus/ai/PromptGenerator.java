@@ -80,6 +80,12 @@ public class PromptGenerator {
         if (generateCategoryPrompt() != null){
             finalPrompt = finalPrompt+generateCategoryPrompt();
         }
+        if (generateDifficultyPrompt() != null){
+            finalPrompt = finalPrompt+generateDifficultyPrompt();
+        }
+        if (generateRarityPrompt() != null){
+            finalPrompt = finalPrompt+generateRarityPrompt();
+        }
         if (generateMoodPrompt() != null){
             finalPrompt = finalPrompt+generateMoodPrompt();
         }
