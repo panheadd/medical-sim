@@ -40,14 +40,13 @@ public class MedicalSimApp extends JFrame {
         openAIAPIFunctions.resetMessages();
     }
 
-    public void showMoodPage(){
+    public void showMoodPage(String categoryName){
+        promptGenerator.setCategory(categoryName);
         cardLayout.show(mainPanel, "mood");
     }
 
-    public void openChat(String categoryName) {
-        chatPage.setCategory(categoryName);
+    public void openChat() {
         cardLayout.show(mainPanel, "chat");
-        promptGenerator.setCategory(categoryName);
         openAIAPIFunctions.addSystemPrompt(promptGenerator.generatePrompt());
     }
 

@@ -28,7 +28,7 @@ public class CategoryPage extends JPanel {
             JButton btn = new JButton(cat);
             btn.setFont(new Font("Arial", Font.PLAIN, 18));
             btn.setPreferredSize(new Dimension(400, 80));
-            btn.addActionListener(e -> app.openChat(cat));
+            btn.addActionListener(e -> app.showMoodPage(cat));
             innerPanel.add(btn);
         }
 
@@ -39,7 +39,7 @@ public class CategoryPage extends JPanel {
         JButton moodButton = new JButton("Kişilik");
         moodButton.setFont(new Font("Arial", Font.PLAIN, 18));
         moodButton.setPreferredSize(new Dimension(100, 40));
-        moodButton.addActionListener(e -> app.showMoodPage());
+        //moodButton.addActionListener(e -> app.showMoodPage());
 
         bottomPanel.add(moodButton);
         add(bottomPanel, BorderLayout.SOUTH);

@@ -170,5 +170,12 @@ public class MoodPage extends JPanel {
         add(centerPanel, BorderLayout.CENTER);
 
 
+        JButton moodButton = new JButton("Tamam");
+        moodButton.setFont(new Font("Arial", Font.PLAIN, 18));
+        moodButton.setPreferredSize(new Dimension(100, 40));
+        moodButton.addActionListener(e -> app.openChat());
+        add(moodButton,BorderLayout.SOUTH);
+
+
     }
 }
