@@ -36,11 +36,11 @@ Students can customize patient behaviour, characteristics of the disease , commu
 ## 🖼️ Screenshots
 
 <p align="center">
-  <img src="images/category_page.png" alt="Category Page" width="400"/>
+  <img src="screenshots/CategoryPage.png" alt="CategoryPage" width="400"/>
   <br/>
-  <img src="images/chat_page.png" alt="Chat Page" width="400"/>
+  <img src="screenshots/SettingsPage.png" alt="SettingsPage" width="400"/>
   <br/>
-  <img src="images/diagnosis_result.png" alt="Diagnosis Evaluation" width="400"/>
+  <img src="screenshots/ChatPage.png" alt="ChatPage" width="400"/>
 </p>
 
 ---
