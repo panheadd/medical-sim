@@ -3,9 +3,9 @@ package com.yunus.ai;
 import javax.swing.*;
 import java.awt.*;
 
-public class MoodPage extends JPanel {
+public class SettingsPage extends JPanel {
     PromptGenerator promptGenerator = PromptGenerator.getPromptGeneratorInstance();
-    public MoodPage(MedicalSimApp app){
+    public SettingsPage(MedicalSimApp app){
         setLayout(new BorderLayout());
 
         JPanel topPanel = new JPanel(new BorderLayout());
@@ -22,7 +22,7 @@ public class MoodPage extends JPanel {
 
         JLabel titleLabel = new JLabel("Kişilik", SwingConstants.CENTER);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 18));
-        topPanel.add(titleLabel,BorderLayout.CENTER);
+        //topPanel.add(titleLabel,BorderLayout.CENTER);
         add(topPanel, BorderLayout.NORTH);
 
         JPanel centerPanel = new JPanel();
@@ -159,22 +159,37 @@ public class MoodPage extends JPanel {
         row6.add(normalbutton6);
         row6.add(rareButton);
 
+        JLabel subTitle = new JLabel("Hasta Kişilik Özellikleri");
+        subTitle.setFont(new Font("Arial", Font.BOLD, 20));
+        subTitle.setBorder(BorderFactory.createEmptyBorder(15, 0, 10, 0)); // sola boşluk (20 px)
+        subTitle.setAlignmentX(Component.CENTER_ALIGNMENT); // sola hizalama
+
+        JLabel hastalikSubTitle = new JLabel("Hastalık Özellikleri");
+        hastalikSubTitle.setFont(new Font("Arial", Font.BOLD, 20));
+        hastalikSubTitle.setBorder(BorderFactory.createEmptyBorder(15, 0, 10, 0)); // sola boşluk (20 px)
+        hastalikSubTitle.setAlignmentX(Component.CENTER_ALIGNMENT); // sola hizalama
+
+        centerPanel.add(hastalikSubTitle);
+
+        centerPanel.add(row5);
+        centerPanel.add(row6);
+
+        centerPanel.add(subTitle);
+
         centerPanel.add(row1);
         centerPanel.add(row2);
         centerPanel.add(row3);
         centerPanel.add(row4);
-        centerPanel.add(row5);
-        centerPanel.add(row6);
-
 
         add(centerPanel, BorderLayout.CENTER);
 
 
-        JButton moodButton = new JButton("Tamam");
-        moodButton.setFont(new Font("Arial", Font.PLAIN, 18));
-        moodButton.setPreferredSize(new Dimension(100, 40));
-        moodButton.addActionListener(e -> app.openChat());
-        add(moodButton,BorderLayout.SOUTH);
+        JButton okButton = new JButton("Tamam");
+        okButton.setFont(new Font("Arial", Font.PLAIN, 18));
+        okButton.setPreferredSize(new Dimension(100, 40));
+        okButton.addActionListener(e -> app.openChat());
+
+        add(okButton,BorderLayout.SOUTH);
 
 
     }

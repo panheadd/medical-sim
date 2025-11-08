@@ -74,7 +74,7 @@ public class OpenAIAPIFunctions {
     public void addDiagnosisMessage(String diagnosis){
         Map<String, String> diagnosisMessage = new HashMap<>();
         diagnosisMessage.put("role", "user");
-        diagnosisMessage.put("content", "Doktorun teşhisi: " + diagnosis + ". Bu teşhis doğru mu? Kısaca açıkla.");
+        diagnosisMessage.put("content", "Doktorun teşhisi: " + diagnosis + ". Bu teşhis doğru mu? Yani senin hastalığın ile uyuşuyor mu Cevabı karşılaştır ve 3. şahıs olarak, Resmi dille Kısaca açıkla.");
         messages.add(diagnosisMessage);
     }
 
@@ -181,5 +181,8 @@ public class OpenAIAPIFunctions {
             String text = json.has("text") ? json.get("text").getAsString() : jsonBody;
             return text;
         }
+    }
+    public void printMessages(){
+        System.out.println(messages);
     }
 }

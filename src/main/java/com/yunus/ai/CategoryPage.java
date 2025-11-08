@@ -36,12 +36,6 @@ public class CategoryPage extends JPanel {
         add(buttonPanel, BorderLayout.CENTER);
 
         JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 10, 10));
-        JButton moodButton = new JButton("Kişilik");
-        moodButton.setFont(new Font("Arial", Font.PLAIN, 18));
-        moodButton.setPreferredSize(new Dimension(100, 40));
-        //moodButton.addActionListener(e -> app.showMoodPage());
-
-        bottomPanel.add(moodButton);
         add(bottomPanel, BorderLayout.SOUTH);
     }
 }

@@ -10,7 +10,7 @@ public class MedicalSimApp extends JFrame {
     private JPanel mainPanel;
     private ChatPage chatPage;
     private CategoryPage categoryPage;
-    private MoodPage moodPage;
+    private SettingsPage settingsPage;
 
     public MedicalSimApp() {
         super("Medical-Sim");
@@ -24,12 +24,12 @@ public class MedicalSimApp extends JFrame {
         StartPage startPage = new StartPage(this);
         categoryPage = new CategoryPage(this);
         chatPage = new ChatPage(this);
-        moodPage = new MoodPage(this);
+        settingsPage = new SettingsPage(this);
 
         mainPanel.add(startPage, "start");
         mainPanel.add(categoryPage, "category");
         mainPanel.add(chatPage, "chat");
-        mainPanel.add(moodPage,"mood");
+        mainPanel.add(settingsPage,"mood");
 
         add(mainPanel);
         cardLayout.show(mainPanel, "start");
@@ -42,11 +42,13 @@ public class MedicalSimApp extends JFrame {
 
     public void showMoodPage(String categoryName){
         promptGenerator.setCategory(categoryName);
+        chatPage.setCategory(categoryName);
         cardLayout.show(mainPanel, "mood");
     }
 
     public void openChat() {
         cardLayout.show(mainPanel, "chat");
+        openAIAPIFunctions.resetMessages();
         openAIAPIFunctions.addSystemPrompt(promptGenerator.generatePrompt());
     }
 

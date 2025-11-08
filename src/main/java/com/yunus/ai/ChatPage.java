@@ -218,5 +218,6 @@ public class ChatPage extends JPanel {
         this.category = category;
         chatHeader.setText(category + " - Sohbet");
         chatArea.setText("");
+        openAIAPIFunctions.resetMessages();
     }
 }
