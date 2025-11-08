@@ -38,7 +38,6 @@ Students can customize patient behaviour, characteristics of the disease , commu
 > ![Category Page](screenshots/CategoryPage.png)
 > ![Settings Page](screenshots/SettingsPage.png)
 > ![ChatPage](screenshots/ChatPage.png)
-> ```
 
 ---
 
