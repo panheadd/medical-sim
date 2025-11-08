@@ -41,3 +41,25 @@ Students can customize patient behaviour, characteristics of the disease , commu
 > ```
 
 ---
+
+## 🛠️ Tech Stack
+
+**Language & Framework**
+- ☕ **Java 19**
+- 🧱 **Swing (Java GUI Framework)**
+- ⚙️ **Maven** for project management and dependency handling
+
+**Libraries & Dependencies**
+- 📡 **OkHttp (4.12.0)** — for making API requests to OpenAI endpoints
+- 🧩 **Gson (2.10.1)** — for JSON serialization and deserialization
+- 🔊 **JLayer (1.0.1)** — for MP3 audio playback in TTS responses
+
+**APIs & Integrations**
+- 🤖 **OpenAI GPT API** — for generating AI-driven patient interactions
+- 🗣️ **OpenAI TTS (Text-to-Speech)** — for AI voice output
+- 🎙️ **OpenAI Whisper API** — for speech-to-text transcription
+
+**Build Configuration**
+- 🧩 **maven-compiler-plugin (3.11.0)**
+    - Source: **Java 19**
+    - Target: **Java 19**
