@@ -32,3 +32,15 @@ Students can customize patient behaviour, characteristics of the disease , commu
 - The AI **evaluates the diagnosis** and provides **feedback** based on accuracy and reasoning.
 
 ---
+
+## 🖼️ Screenshots
+
+> Add screenshots of your app here  
+> Example:
+> ```markdown
+> ![Category Page](screenshots/CategoryPage.png)
+> ![Settings Page](screenshots/SettingsPage.png)
+> ![ChatPage](screenshots/ChatPage.png)
+> ```
+
+---
