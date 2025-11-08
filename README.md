@@ -35,9 +35,6 @@ Students can customize patient behaviour, characteristics of the disease , commu
 
 ## 🖼️ Screenshots
 
-> Add screenshots of your app here  
-> Example:
-> ```markdown
 > ![Category Page](screenshots/CategoryPage.png)
 > ![Settings Page](screenshots/SettingsPage.png)
 > ![ChatPage](screenshots/ChatPage.png)
