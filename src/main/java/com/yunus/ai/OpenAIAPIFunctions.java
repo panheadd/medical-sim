@@ -177,7 +177,6 @@ public class OpenAIAPIFunctions {
 
             String jsonBody = resp.body().string();
             JsonObject json = JsonParser.parseString(jsonBody).getAsJsonObject();
-            
             String text = json.has("text") ? json.get("text").getAsString() : jsonBody;
             return text;
         }
