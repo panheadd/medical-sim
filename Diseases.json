@@ -8,135 +8,105 @@
           "difficulty": "HARD",
           "rarity": "COMMON",
           "description": "Kalp damarının ani tıkanması sonucu gelişen göğüs ağrısı ve dolaşım bozukluğu tablosu.",
-          "symptoms": ["Göğüs ağrısı", "Terleme", "Bulantı", "Sol kola yayılan ağrı", "Nefes darlığı"],
-          "history": ["Sigara", "Hipertansiyon", "Ailede kalp hastalığı"],
-          "ai_prompt": "Konuşurken ağrıdan dolayı kısa cümleler kuruyor, endişeli."
+          "symptoms": ["Göğüs ağrısı", "Terleme", "Bulantı", "Sol kola yayılan ağrı", "Nefes darlığı"]
         },
         {
           "name": "Akut Pulmoner Emboli",
           "difficulty": "HARD",
           "rarity": "NORMAL",
           "description": "Akciğer damarlarının pıhtı ile ani tıkanması.",
-          "symptoms": ["Ani nefes darlığı", "Göğüs ağrısı", "Çarpıntı", "Öksürük"],
-          "history": ["Uzun süre hareketsizlik", "Doğum kontrol hapı", "Bacak şişliği"],
-          "ai_prompt": "Nefes nefese, konuşurken sık sık duraklıyor."
+          "symptoms": ["Ani nefes darlığı", "Göğüs ağrısı", "Çarpıntı", "Öksürük"]
         },
         {
           "name": "Anafilaktik Şok",
           "difficulty": "NORMAL",
           "rarity": "RARE",
           "description": "Şiddetli alerjik reaksiyon, yaşamı tehdit eder.",
-          "symptoms": ["Nefes darlığı", "Döküntü", "Yüzde şişme", "Hipotansiyon"],
-          "history": ["Alerji öyküsü", "Yeni ilaç kullanımı"],
-          "ai_prompt": "Panik halinde ve hızlı nefes alıp veriyor."
+          "symptoms": ["Nefes darlığı", "Döküntü", "Yüzde şişme", "Hipotansiyon"]
         },
         {
           "name": "Akut Apendisit",
           "difficulty": "EASY",
           "rarity": "COMMON",
           "description": "Appendiksin iltihaplanması ile karın ağrısı tablosu.",
-          "symptoms": ["Sağ alt karın ağrısı", "Bulantı", "İştahsızlık", "Hafif ateş"],
-          "history": ["Ani başlayan karın ağrısı"],
-          "ai_prompt": "Ağrı nedeniyle kıpırdanmak istemiyor."
+          "symptoms": ["Sağ alt karın ağrısı", "Bulantı", "İştahsızlık", "Hafif ateş"]
         },
         {
           "name": "Akut Pankreatit",
           "difficulty": "HARD",
           "rarity": "NORMAL",
           "description": "Pankreas iltihabı, genellikle alkol veya safra taşına bağlı.",
-          "symptoms": ["Şiddetli karın ağrısı", "Kusma", "Sırta vuran ağrı"],
-          "history": ["Alkol kullanımı", "Safra taşı hikayesi"],
-          "ai_prompt": "Ağrıdan dolayı öne eğilmiş şekilde duruyor."
+          "symptoms": ["Şiddetli karın ağrısı", "Kusma", "Sırta vuran ağrı"]
         },
         {
           "name": "Akut Astım Atağı",
           "difficulty": "NORMAL",
           "rarity": "COMMON",
           "description": "Astım hastalarında gelişen bronş daralması.",
-          "symptoms": ["Nefes darlığı", "Wheezing", "Öksürük"],
-          "history": ["Astım öyküsü", "Alerjen maruziyeti"],
-          "ai_prompt": "Konuşurken kelimeleri bölerek konuşuyor."
+          "symptoms": ["Nefes darlığı", "Wheezing", "Öksürük"]
         },
         {
           "name": "Hipoglisemi",
           "difficulty": "EASY",
           "rarity": "COMMON",
           "description": "Kan şekerinin aşırı düşmesi.",
-          "symptoms": ["Titreme", "Terleme", "Bilinç bulanıklığı"],
-          "history": ["Diyabet", "İnsülin kullanımı"],
-          "ai_prompt": "Bilinç bulanık, karışık cümleler kuruyor."
+          "symptoms": ["Titreme", "Terleme", "Bilinç bulanıklığı"]
         },
         {
           "name": "İnme (Hemorajik/İskemik)",
           "difficulty": "HARD",
           "rarity": "COMMON",
           "description": "Beyin damar tıkanması veya kanaması.",
-          "symptoms": ["Yüz kayması", "Kol güçsüzlüğü", "Konuşma bozukluğu"],
-          "history": ["Hipertansiyon", "Atrial fibrilasyon"],
-          "ai_prompt": "Sözcükleri doğru telaffuz etmekte zorlanıyor."
+          "symptoms": ["Yüz kayması", "Kol güçsüzlüğü", "Konuşma bozukluğu"]
         },
         {
           "name": "Subaraknoid Kanama",
           "difficulty": "HARD",
           "rarity": "RARE",
           "description": "Beyin zarları arasında ani kanama.",
-          "symptoms": ["Ani şiddetli baş ağrısı", "Bulantı", "Bilinç değişikliği"],
-          "history": ["Anevrizma öyküsü"],
-          "ai_prompt": "Baş ağrısının şiddetinden gözlerini bile açmak istemiyor."
+          "symptoms": ["Ani şiddetli baş ağrısı", "Bulantı", "Bilinç değişikliği"]
         },
         {
           "name": "Akut Böbrek Taşı (Renal Kolik)",
           "difficulty": "NORMAL",
           "rarity": "COMMON",
           "description": "Üreter taşına bağlı şiddetli yan ağrısı.",
-          "symptoms": ["Yan ağrısı", "İdrarda kan", "Kusma"],
-          "history": ["Geçmişte böbrek taşı"],
-          "ai_prompt": "Ağrıdan dolayı sürekli pozisyon değiştiriyor."
+          "symptoms": ["Yan ağrısı", "İdrarda kan", "Kusma"]
         },
         {
           "name": "Pneumotoraks",
           "difficulty": "HARD",
           "rarity": "NORMAL",
           "description": "Akciğerin çökmesi durumu.",
-          "symptoms": ["Ani nefes darlığı", "Göğüs ağrısı"],
-          "history": ["Sigara", "Zayıf uzun boylu genç erkek"],
-          "ai_prompt": "Derin nefes almakta çok zorlanıyor."
+          "symptoms": ["Ani nefes darlığı", "Göğüs ağrısı"]
         },
         {
           "name": "Sepsis",
           "difficulty": "HARD",
           "rarity": "NORMAL",
           "description": "Vücudun enfeksiyona aşırı yanıt vermesi.",
-          "symptoms": ["Ateş", "Hızlı nabız", "Bilinç değişikliği", "Titreme"],
-          "history": ["Yakın zamanda enfeksiyon"],
-          "ai_prompt": "Bilinç bulanık, halsiz."
+          "symptoms": ["Ateş", "Hızlı nabız", "Bilinç değişikliği", "Titreme"]
         },
         {
           "name": "Akut Gastroenterit (Şiddetli)",
           "difficulty": "EASY",
           "rarity": "COMMON",
           "description": "Mide-bağırsak enfeksiyonu.",
-          "symptoms": ["İshal", "Kusma", "Karın ağrısı"],
-          "history": ["Bozuk gıda tüketimi"],
-          "ai_prompt": "Halsiz ve bitkin bir ses tonuyla konuşuyor."
+          "symptoms": ["İshal", "Kusma", "Karın ağrısı"]
         },
         {
           "name": "Akut Hepatit",
           "difficulty": "NORMAL",
           "rarity": "NORMAL",
           "description": "Karaciğer iltihabı.",
-          "symptoms": ["Sarılık", "Yorgunluk", "Karın ağrısı"],
-          "history": ["Kirli su tüketimi", "Riskli cinsel davranış"],
-          "ai_prompt": "Yorgun ve düşük enerjili konuşuyor."
+          "symptoms": ["Sarılık", "Yorgunluk", "Karın ağrısı"]
         },
         {
           "name": "Status Epileptikus",
           "difficulty": "HARD",
           "rarity": "RARE",
           "description": "Uzayan veya tekrarlayan nöbet.",
-          "symptoms": ["Bilinç kaybı", "Kasılmalar"],
-          "history": ["Epilepsi hastalığı"],
-          "ai_prompt": "Konuşamıyor, nöbet sonrası bilinç bulanık."
+          "symptoms": ["Bilinç kaybı", "Kasılmalar"]
         },
 
         {
@@ -144,144 +114,112 @@
           "difficulty": "HARD",
           "rarity": "COMMON",
           "description": "Kalp damarlarının ani daralması veya tıkanması.",
-          "symptoms": ["Göğüs ağrısı", "Terleme", "Bulantı"],
-          "history": ["Sigara", "Yüksek kolestrol"],
-          "ai_prompt": "Ağrıdan dolayı gergin ve huzursuz."
+          "symptoms": ["Göğüs ağrısı", "Terleme", "Bulantı"]
         },
         {
           "name": "Akut Perikardit",
           "difficulty": "NORMAL",
           "rarity": "NORMAL",
           "description": "Perikard dokusunun iltihabı.",
-          "symptoms": ["Göğüs ağrısı", "Ateş", "Nefesle artan ağrı"],
-          "history": ["Viral enfeksiyon"],
-          "ai_prompt": "Ağrı nefes alınca artıyor, dikkatli konuşuyor."
+          "symptoms": ["Göğüs ağrısı", "Ateş", "Nefesle artan ağrı"]
         },
         {
           "name": "Akut Aort Diseksiyonu",
           "difficulty": "HARD",
           "rarity": "RARE",
           "description": "Aort damarında yırtılma.",
-          "symptoms": ["Sırta vuran göğüs ağrısı", "Hipertansiyon"],
-          "history": ["Yüksek tansiyon", "Bağ dokusu hastalığı"],
-          "ai_prompt": "Ağrı şiddetli, yüzü sıkıntı içinde."
+          "symptoms": ["Sırta vuran göğüs ağrısı", "Hipertansiyon"]
         },
         {
           "name": "Hipertansif Kriz",
           "difficulty": "NORMAL",
           "rarity": "COMMON",
           "description": "Kan basıncının aşırı yükselmesi.",
-          "symptoms": ["Baş ağrısı", "Bulanık görme", "Burun kanaması"],
-          "history": ["Tansiyon hastalığı"],
-          "ai_prompt": "Stresli ve gergin."
+          "symptoms": ["Baş ağrısı", "Bulanık görme", "Burun kanaması"]
         },
         {
           "name": "Ketoasidoz",
           "difficulty": "HARD",
           "rarity": "NORMAL",
           "description": "Diyabet kontrolsüzlüğüne bağlı metabolik acil durum.",
-          "symptoms": ["Kusma", "Karın ağrısı", "Aseton kokusu"],
-          "history": ["Tip 1 diyabet"],
-          "ai_prompt": "Halsiz ve uykuya meyilli."
+          "symptoms": ["Kusma", "Karın ağrısı", "Aseton kokusu"]
         },
         {
           "name": "Hiperkalemi",
           "difficulty": "HARD",
           "rarity": "NORMAL",
           "description": "Kanda potasyumun aşırı yükselmesi.",
-          "symptoms": ["Çarpıntı", "Kas güçsüzlüğü"],
-          "history": ["Böbrek yetmezliği"],
-          "ai_prompt": "Kendini halsiz hissediyor."
+          "symptoms": ["Çarpıntı", "Kas güçsüzlüğü"]
         },
         {
           "name": "Hipotermi",
           "difficulty": "EASY",
           "rarity": "RARE",
           "description": "Vücut ısısının aşırı düşmesi.",
-          "symptoms": ["Titreme", "Konfüzyon"],
-          "history": ["Soğuğa maruz kalma"],
-          "ai_prompt": "Konuşurken dişleri titriyor."
+          "symptoms": ["Titreme", "Konfüzyon"]
         },
         {
           "name": "Isı Çarpması",
           "difficulty": "NORMAL",
           "rarity": "NORMAL",
           "description": "Aşırı sıcak maruziyeti.",
-          "symptoms": ["Ateş", "Terleyememe", "Halsizlik"],
-          "history": ["Sıcak ortamda uzun süre kalma"],
-          "ai_prompt": "Bitkin ve halsiz."
+          "symptoms": ["Ateş", "Terleyememe", "Halsizlik"]
         },
         {
           "name": "Akut Alkol Zehirlenmesi",
           "difficulty": "EASY",
           "rarity": "COMMON",
           "description": "Aşırı alkol tüketimine bağlı zehirlenme.",
-          "symptoms": ["Sarhoşluk", "Kusma", "Bilinç değişikliği"],
-          "history": ["Alkol tüketimi"],
-          "ai_prompt": "Konuşması peltek."
+          "symptoms": ["Sarhoşluk", "Kusma", "Bilinç değişikliği"]
         },
         {
           "name": "İlaç Zehirlenmesi",
           "difficulty": "NORMAL",
           "rarity": "NORMAL",
           "description": "Aşırı doz ilaç alımı.",
-          "symptoms": ["Uyku hali", "Kusma", "Bilinç bulanıklığı"],
-          "history": ["Yeni ilaç kullanımı"],
-          "ai_prompt": "Yavaş konuşuyor."
+          "symptoms": ["Uyku hali", "Kusma", "Bilinç bulanıklığı"]
         },
         {
           "name": "CO Zehirlenmesi",
           "difficulty": "HARD",
           "rarity": "RARE",
           "description": "Karbonmonoksit gazına maruziyet.",
-          "symptoms": ["Baş ağrısı", "Baş dönmesi", "Bilinç değişikliği"],
-          "history": ["Soba zehirlenmesi"],
-          "ai_prompt": "Sersemlemiş."
+          "symptoms": ["Baş ağrısı", "Baş dönmesi", "Bilinç değişikliği"]
         },
         {
           "name": "Anaerobik Enfeksiyon (Nekrotizan Fasiit)",
           "difficulty": "HARD",
           "rarity": "RARE",
           "description": "Hızla ilerleyen yumuşak doku enfeksiyonu.",
-          "symptoms": ["Şiddetli lokalize ağrı", "Ateş", "Kızarıklık"],
-          "history": ["Diyabet", "Travma"],
-          "ai_prompt": "Şiddetli ağrılı."
+          "symptoms": ["Şiddetli lokalize ağrı", "Ateş", "Kızarıklık"]
         },
         {
           "name": "Akut Safra Kesesı İltihabı",
           "difficulty": "NORMAL",
           "rarity": "NORMAL",
           "description": "Safra kesesi enfeksiyonu.",
-          "symptoms": ["Sağ üst karın ağrısı", "Ateş", "Bulantı"],
-          "history": ["Safra taşı"],
-          "ai_prompt": "Ağrı nedeniyle yavaş konuşuyor."
+          "symptoms": ["Sağ üst karın ağrısı", "Ateş", "Bulantı"]
         },
         {
           "name": "Perforasyon (Delinmiş Ülser)",
           "difficulty": "HARD",
           "rarity": "NORMAL",
           "description": "Mide veya bağırsak duvarının yırtılması.",
-          "symptoms": ["Ani karın ağrısı", "Karın sertliği"],
-          "history": ["Ülser hastalığı"],
-          "ai_prompt": "Şiddetli ve aniden başlayan ağrı ile konuşuyor."
+          "symptoms": ["Ani karın ağrısı", "Karın sertliği"]
         },
         {
           "name": "Kafa Travması",
           "difficulty": "NORMAL",
           "rarity": "COMMON",
           "description": "Baş bölgesine darbe sonrası gelişen acil durum.",
-          "symptoms": ["Baş ağrısı", "Bilinç bulanıklığı", "Mide bulantısı"],
-          "history": ["Düşme", "Kaza"],
-          "ai_prompt": "Sersem ve kafa karışıklığı yaşıyor."
+          "symptoms": ["Baş ağrısı", "Bilinç bulanıklığı", "Mide bulantısı"]
         },
         {
           "name": "Akut Kalp Yetmezliği",
           "difficulty": "HARD",
           "rarity": "NORMAL",
           "description": "Kalbin pompa gücünün ani bozulması.",
-          "symptoms": ["Nefes darlığı", "Ödem", "Çarpıntı"],
-          "history": ["Kalp hastalığı"],
-          "ai_prompt": "Nefes nefese konuşuyor."
+          "symptoms": ["Nefes darlığı", "Ödem", "Çarpıntı"]
         }
       ]
     },
