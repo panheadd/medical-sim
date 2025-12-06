@@ -1,7 +1,10 @@
 package com.yunus.ai;
 
+import java.util.List;
+
 public class PromptGenerator {
     private static PromptGenerator promptGenerator;
+    private final DiseaseLoader diseaseLoader = DiseaseLoader.getInstance();
     enum Mood1{
         PASSIVE,
         NORMAL,
@@ -40,8 +43,8 @@ public class PromptGenerator {
     private Mood2 mood2 = Mood2.NORMAL;
     private Mood3 mood3 = Mood3.NORMAL ;
     private Mood4 mood4 = Mood4.NORMAL;
-    private Difficulty difficulty = Difficulty.NORMAL;
-    private Rarity rarity = Rarity.NORMAL;
+    private Difficulty difficulty = null;
+    private Rarity rarity = null;
 
     public void setMood1(Mood1 mood1){
         this.mood1 = mood1;
@@ -76,6 +79,8 @@ public class PromptGenerator {
         return promptGenerator;
     }
     public String generatePrompt(){
+        Disease disease = getDisease();
+        System.out.println(disease.getName());
         finalPrompt = basePrompt;
         if (generateCategoryPrompt() != null){
             finalPrompt = finalPrompt+generateCategoryPrompt();
@@ -201,4 +206,15 @@ public class PromptGenerator {
             return null;
         }
     }
+
+    private Disease getDisease() {
+        DiseaseFinder finder = new DiseaseFinder(DiseaseLoader.getInstance().load("Diseases.json"));
+
+        String diff = (difficulty == null) ? "" : difficulty.name();
+        String rar  = (rarity == null)     ? "" : rarity.name();
+
+        return finder.getRandomDisease(category, diff, rar);
+    }
+
+
 }

@@ -23,7 +23,7 @@ public class CategoryPage extends JPanel {
         innerPanel.setLayout(new GridLayout(0, 1, 10, 10));
         innerPanel.setPreferredSize(new Dimension(300, 500)); // Butonların bulunduğu alan boyutu
 
-        String[] categories = {"Acil Durum", "Dahiliye", "Çocuk Hastalıkları","Nörolojik Hasatalıklar","Psikolojik Hastalıklar","Diş Ve Ağız Sağlığı","Göz ve Kulak Burun Boğaz","Kas ve İskelet Sistemi","Deri Hastalıkları","Kadın ve Üreme Sağlığı"};
+        String[] categories = {"Acil Durum", "Dahiliye", "Çocuk Hastalıkları","Nörolojik Hastalıklar","Psikolojik Hastalıklar","Diş Ve Ağız Sağlığı","Göz ve Kulak Burun Boğaz","Kas ve İskelet Sistemi","Deri Hastalıkları","Kadın ve Üreme Sağlığı"};
         for (String cat : categories) {
             JButton btn = new JButton(cat);
             btn.setFont(new Font("Arial", Font.PLAIN, 18));

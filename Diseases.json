@@ -1292,7 +1292,7 @@
       ]
     },
     {
-      "category": "Göz Kulak Burun Boğaz",
+      "category": "Göz ve Kulak Burun Boğaz",
       "diseases": [
         {
           "name": "Konjonktivit",
@@ -1311,7 +1311,7 @@
         {
           "name": "Keratit",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Işığa hassasiyet", "Göz ağrısı", "Bulanık görme"],
           "description": "Kornea iltihaplanması."
         },
@@ -1325,7 +1325,7 @@
         {
           "name": "Glokom",
           "difficulty": "HARD",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Göz içi basıncı artışı", "Görme alanı daralması", "Baş ağrısı"],
           "description": "Görme sinirine baskı yapan kronik göz hastalığı."
         },
@@ -1423,7 +1423,7 @@
         {
           "name": "Burun Polipleri",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Burun tıkanıklığı", "Koku kaybı", "Geniz akıntısı"],
           "description": "Burun içinde oluşan iyi huylu kitleler."
         },
@@ -1472,7 +1472,7 @@
         {
           "name": "Adenoid Hipertrofisi",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Ağızdan nefes alma", "Horlama", "Burun tıkanıklığı"],
           "description": "Geniz etinin büyümesi."
         },
@@ -1486,7 +1486,7 @@
         {
           "name": "Dakriosistit",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Gözyaşı akışı", "Burun kökünde ağrı", "Kızarıklık"],
           "description": "Gözyaşı kesesi iltihabı."
         },
@@ -1533,14 +1533,14 @@
         {
           "name": "Golfçü Dirseği",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Dirsek iç tarafında ağrı", "Zayıf kavrama", "Basınca hassasiyet"],
           "description": "Dirsek iç tendonlarının iltihaplanması."
         },
         {
           "name": "Bursit",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Eklem çevresinde şişlik", "Sıcaklık artışı", "Ağrı"],
           "description": "Eklem çevresindeki sıvı keselerinin iltihaplanması."
         },
@@ -1554,7 +1554,7 @@
         {
           "name": "Fibromiyalji",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Yaygın kas ağrısı", "Yorgunluk", "Uyku bozukluğu"],
           "description": "Vücudun çeşitli bölgelerinde kronik ağrı sendromu."
         },
@@ -1582,21 +1582,21 @@
         {
           "name": "Skolyoz",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Omurga eğriliği", "Sırt asimetrisi", "Sırt ağrısı"],
           "description": "Omurganın yana doğru eğilmesi."
         },
         {
           "name": "Kifoz",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Sırt kamburluğu", "Sırt ağrısı", "Yorgunluk"],
           "description": "Sırt bölgesinin aşırı yuvarlanması."
         },
         {
           "name": "Lordoz",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Bel çukurunda artış", "Bel ağrısı", "Hareket kısıtlılığı"],
           "description": "Bel bölgesinde içe doğru aşırı kavis."
         },
@@ -1610,7 +1610,7 @@
         {
           "name": "Boyun Fıtığı",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Boyun ağrısı", "Kol uyuşması", "Kas güçsüzlüğü"],
           "description": "Servikal diskin sinire baskı yapması."
         },
@@ -1638,14 +1638,14 @@
         {
           "name": "Menisküs Yırtığı",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Dizde kilitlenme", "Ağrı", "Şişlik"],
           "description": "Diz eklemindeki kıkırdak yapısının yırtılması."
         },
         {
           "name": "Ön Çapraz Bağ (ACL) Yırtığı",
           "difficulty": "HARD",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Dizde boşalma hissi", "Şişlik", "Stabilite kaybı"],
           "description": "Diz stabilitesini sağlayan bağın yırtılması."
         },
@@ -1659,7 +1659,7 @@
         {
           "name": "Donuk Omuz",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Hareket kısıtlılığı", "Omuz ağrısı", "Sertlik"],
           "description": "Omuz ekleminin kapsülünün sertleşmesi."
         },
@@ -1673,21 +1673,21 @@
         {
           "name": "Halluks Valgus",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Baş parmak eğriliği", "Ayak ağrısı", "Kızarıklık"],
           "description": "Ayak baş parmağının dışa doğru dönmesi."
         },
         {
           "name": "Tetik Parmak",
           "difficulty": "EASY",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Parmak takılması", "Ağrı", "Hareket zorluğu"],
           "description": "Parmak tendonunun kılıf içinde sıkışması."
         },
         {
           "name": "Çekiç Parmak",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Parmak eklemi bükülmesi", "Ağrı", "Tahriş"],
           "description": "Ayak parmak ekleminin anormal kıvrılması."
         },
@@ -1701,7 +1701,7 @@
         {
           "name": "Stres Kırığı",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Yerelleşmiş kemik ağrısı", "Şişlik", "Yürüyüşte zorlanma"],
           "description": "Tekrarlayan zorlanmalara bağlı küçük kemik kırıkları."
         },
@@ -1734,7 +1734,7 @@
         {
           "name": "Sedef Hastalığı (Psoriasis)",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Gümüş renkli pullanma", "Kızarıklık", "Kaşıntı"],
           "description": "Bağışıklık sistemi bozukluğuna bağlı cilt hücrelerinin hızlı çoğalması."
         },
@@ -1769,14 +1769,14 @@
         {
           "name": "Rosacea (Gül Hastalığı)",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Yüzde kızarma", "Kılcal damar belirginliği", "Yanma hissi"],
           "description": "Kronik yüz kızarması ve iltihaplanma ile seyreden hastalık."
         },
         {
           "name": "Vitiligo",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Pigmentsiz beyaz lekeler", "Simetrik dağılım", "Genişleme eğilimi"],
           "description": "Ciltte pigment kaybına neden olan otoimmün bozukluk."
         },
@@ -1797,14 +1797,14 @@
         {
           "name": "Saçkıran (Alopecia Areata)",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Bölgesel saç dökülmesi", "Yuvarlak boşluklar", "Hızlı gelişme"],
           "description": "Bağışıklık sisteminin saç köklerini hedeflemesiyle oluşan dökülme."
         },
         {
           "name": "Şerit Hastalığı (Zona)",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Yanıcı ağrı", "Su kabarcıkları", "Tek taraflı cilt döküntüsü"],
           "description": "Varicella zoster virüsünün tekrar aktivasyonu."
         },
@@ -1818,28 +1818,28 @@
         {
           "name": "Selülit",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Ciltte kızarıklık", "Sıcaklık artışı", "Ağrı"],
           "description": "Derinin derin tabakalarını etkileyen bakteriyel enfeksiyon."
         },
         {
           "name": "Kurdeşen Anjiyoödem",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Derin şişlik", "Göz ve dudak çevresi şişmesi", "Kaşıntı"],
           "description": "Ürtikerin daha derin dokuları etkilemesi."
         },
         {
           "name": "Sistit Dermatit",
           "difficulty": "EASY",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Tahriş", "Kızarıklık", "Kaşıntı"],
           "description": "Ciltte irritasyon sonucu oluşan hafif iltihaplanma."
         },
         {
           "name": "Pitiriyazis Rosea",
           "difficulty": "EASY",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Gövde döküntüsü", "Oval lekeler", "Hafif kaşıntı"],
           "description": "Genellikle kendiliğinden düzelen viral kaynaklı döküntü."
         },
@@ -1853,7 +1853,7 @@
         {
           "name": "Melazma",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Koyu renkli yüz lekeleri", "Simetrik dağılım", "Güneşle artma"],
           "description": "Hormon ve güneşe bağlı cilt pigmentasyonu artışı."
         },
@@ -1888,7 +1888,7 @@
         {
           "name": "Hiperhidroz",
           "difficulty": "EASY",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["Aşırı terleme", "Islaklık", "El-ayak terlemesi"],
           "description": "Ter bezlerinin aşırı çalışması."
         },
@@ -1902,7 +1902,7 @@
         {
           "name": "Gül Hastalığı Papülopüstüler Tip",
           "difficulty": "NORMAL",
-          "rarity": "UNCOMMON",
+          "rarity": "NORMAL",
           "symptoms": ["İrinli kabarcıklar", "Kızarıklık", "Yanma hissi"],
           "description": "Rosacea’nın sivilce benzeri lezyonlarla seyreden formu."
         },
