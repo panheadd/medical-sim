@@ -1,0 +1,2210 @@
+{
+  "categories": [
+    {
+      "name": "Acil Durum",
+      "diseases": [
+        {
+          "name": "Akut Miyokard Enfarktüsü",
+          "difficulty": "HARD",
+          "rarity": "COMMON",
+          "description": "Kalp damarının ani tıkanması sonucu gelişen göğüs ağrısı ve dolaşım bozukluğu tablosu.",
+          "symptoms": ["Göğüs ağrısı", "Terleme", "Bulantı", "Sol kola yayılan ağrı", "Nefes darlığı"],
+          "history": ["Sigara", "Hipertansiyon", "Ailede kalp hastalığı"],
+          "ai_prompt": "Konuşurken ağrıdan dolayı kısa cümleler kuruyor, endişeli."
+        },
+        {
+          "name": "Akut Pulmoner Emboli",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "description": "Akciğer damarlarının pıhtı ile ani tıkanması.",
+          "symptoms": ["Ani nefes darlığı", "Göğüs ağrısı", "Çarpıntı", "Öksürük"],
+          "history": ["Uzun süre hareketsizlik", "Doğum kontrol hapı", "Bacak şişliği"],
+          "ai_prompt": "Nefes nefese, konuşurken sık sık duraklıyor."
+        },
+        {
+          "name": "Anafilaktik Şok",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "description": "Şiddetli alerjik reaksiyon, yaşamı tehdit eder.",
+          "symptoms": ["Nefes darlığı", "Döküntü", "Yüzde şişme", "Hipotansiyon"],
+          "history": ["Alerji öyküsü", "Yeni ilaç kullanımı"],
+          "ai_prompt": "Panik halinde ve hızlı nefes alıp veriyor."
+        },
+        {
+          "name": "Akut Apendisit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "description": "Appendiksin iltihaplanması ile karın ağrısı tablosu.",
+          "symptoms": ["Sağ alt karın ağrısı", "Bulantı", "İştahsızlık", "Hafif ateş"],
+          "history": ["Ani başlayan karın ağrısı"],
+          "ai_prompt": "Ağrı nedeniyle kıpırdanmak istemiyor."
+        },
+        {
+          "name": "Akut Pankreatit",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "description": "Pankreas iltihabı, genellikle alkol veya safra taşına bağlı.",
+          "symptoms": ["Şiddetli karın ağrısı", "Kusma", "Sırta vuran ağrı"],
+          "history": ["Alkol kullanımı", "Safra taşı hikayesi"],
+          "ai_prompt": "Ağrıdan dolayı öne eğilmiş şekilde duruyor."
+        },
+        {
+          "name": "Akut Astım Atağı",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "description": "Astım hastalarında gelişen bronş daralması.",
+          "symptoms": ["Nefes darlığı", "Wheezing", "Öksürük"],
+          "history": ["Astım öyküsü", "Alerjen maruziyeti"],
+          "ai_prompt": "Konuşurken kelimeleri bölerek konuşuyor."
+        },
+        {
+          "name": "Hipoglisemi",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "description": "Kan şekerinin aşırı düşmesi.",
+          "symptoms": ["Titreme", "Terleme", "Bilinç bulanıklığı"],
+          "history": ["Diyabet", "İnsülin kullanımı"],
+          "ai_prompt": "Bilinç bulanık, karışık cümleler kuruyor."
+        },
+        {
+          "name": "İnme (Hemorajik/İskemik)",
+          "difficulty": "HARD",
+          "rarity": "COMMON",
+          "description": "Beyin damar tıkanması veya kanaması.",
+          "symptoms": ["Yüz kayması", "Kol güçsüzlüğü", "Konuşma bozukluğu"],
+          "history": ["Hipertansiyon", "Atrial fibrilasyon"],
+          "ai_prompt": "Sözcükleri doğru telaffuz etmekte zorlanıyor."
+        },
+        {
+          "name": "Subaraknoid Kanama",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "description": "Beyin zarları arasında ani kanama.",
+          "symptoms": ["Ani şiddetli baş ağrısı", "Bulantı", "Bilinç değişikliği"],
+          "history": ["Anevrizma öyküsü"],
+          "ai_prompt": "Baş ağrısının şiddetinden gözlerini bile açmak istemiyor."
+        },
+        {
+          "name": "Akut Böbrek Taşı (Renal Kolik)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "description": "Üreter taşına bağlı şiddetli yan ağrısı.",
+          "symptoms": ["Yan ağrısı", "İdrarda kan", "Kusma"],
+          "history": ["Geçmişte böbrek taşı"],
+          "ai_prompt": "Ağrıdan dolayı sürekli pozisyon değiştiriyor."
+        },
+        {
+          "name": "Pneumotoraks",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "description": "Akciğerin çökmesi durumu.",
+          "symptoms": ["Ani nefes darlığı", "Göğüs ağrısı"],
+          "history": ["Sigara", "Zayıf uzun boylu genç erkek"],
+          "ai_prompt": "Derin nefes almakta çok zorlanıyor."
+        },
+        {
+          "name": "Sepsis",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "description": "Vücudun enfeksiyona aşırı yanıt vermesi.",
+          "symptoms": ["Ateş", "Hızlı nabız", "Bilinç değişikliği", "Titreme"],
+          "history": ["Yakın zamanda enfeksiyon"],
+          "ai_prompt": "Bilinç bulanık, halsiz."
+        },
+        {
+          "name": "Akut Gastroenterit (Şiddetli)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "description": "Mide-bağırsak enfeksiyonu.",
+          "symptoms": ["İshal", "Kusma", "Karın ağrısı"],
+          "history": ["Bozuk gıda tüketimi"],
+          "ai_prompt": "Halsiz ve bitkin bir ses tonuyla konuşuyor."
+        },
+        {
+          "name": "Akut Hepatit",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "description": "Karaciğer iltihabı.",
+          "symptoms": ["Sarılık", "Yorgunluk", "Karın ağrısı"],
+          "history": ["Kirli su tüketimi", "Riskli cinsel davranış"],
+          "ai_prompt": "Yorgun ve düşük enerjili konuşuyor."
+        },
+        {
+          "name": "Status Epileptikus",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "description": "Uzayan veya tekrarlayan nöbet.",
+          "symptoms": ["Bilinç kaybı", "Kasılmalar"],
+          "history": ["Epilepsi hastalığı"],
+          "ai_prompt": "Konuşamıyor, nöbet sonrası bilinç bulanık."
+        },
+
+        {
+          "name": "Akut Koroner Sendrom",
+          "difficulty": "HARD",
+          "rarity": "COMMON",
+          "description": "Kalp damarlarının ani daralması veya tıkanması.",
+          "symptoms": ["Göğüs ağrısı", "Terleme", "Bulantı"],
+          "history": ["Sigara", "Yüksek kolestrol"],
+          "ai_prompt": "Ağrıdan dolayı gergin ve huzursuz."
+        },
+        {
+          "name": "Akut Perikardit",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "description": "Perikard dokusunun iltihabı.",
+          "symptoms": ["Göğüs ağrısı", "Ateş", "Nefesle artan ağrı"],
+          "history": ["Viral enfeksiyon"],
+          "ai_prompt": "Ağrı nefes alınca artıyor, dikkatli konuşuyor."
+        },
+        {
+          "name": "Akut Aort Diseksiyonu",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "description": "Aort damarında yırtılma.",
+          "symptoms": ["Sırta vuran göğüs ağrısı", "Hipertansiyon"],
+          "history": ["Yüksek tansiyon", "Bağ dokusu hastalığı"],
+          "ai_prompt": "Ağrı şiddetli, yüzü sıkıntı içinde."
+        },
+        {
+          "name": "Hipertansif Kriz",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "description": "Kan basıncının aşırı yükselmesi.",
+          "symptoms": ["Baş ağrısı", "Bulanık görme", "Burun kanaması"],
+          "history": ["Tansiyon hastalığı"],
+          "ai_prompt": "Stresli ve gergin."
+        },
+        {
+          "name": "Ketoasidoz",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "description": "Diyabet kontrolsüzlüğüne bağlı metabolik acil durum.",
+          "symptoms": ["Kusma", "Karın ağrısı", "Aseton kokusu"],
+          "history": ["Tip 1 diyabet"],
+          "ai_prompt": "Halsiz ve uykuya meyilli."
+        },
+        {
+          "name": "Hiperkalemi",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "description": "Kanda potasyumun aşırı yükselmesi.",
+          "symptoms": ["Çarpıntı", "Kas güçsüzlüğü"],
+          "history": ["Böbrek yetmezliği"],
+          "ai_prompt": "Kendini halsiz hissediyor."
+        },
+        {
+          "name": "Hipotermi",
+          "difficulty": "EASY",
+          "rarity": "RARE",
+          "description": "Vücut ısısının aşırı düşmesi.",
+          "symptoms": ["Titreme", "Konfüzyon"],
+          "history": ["Soğuğa maruz kalma"],
+          "ai_prompt": "Konuşurken dişleri titriyor."
+        },
+        {
+          "name": "Isı Çarpması",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "description": "Aşırı sıcak maruziyeti.",
+          "symptoms": ["Ateş", "Terleyememe", "Halsizlik"],
+          "history": ["Sıcak ortamda uzun süre kalma"],
+          "ai_prompt": "Bitkin ve halsiz."
+        },
+        {
+          "name": "Akut Alkol Zehirlenmesi",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "description": "Aşırı alkol tüketimine bağlı zehirlenme.",
+          "symptoms": ["Sarhoşluk", "Kusma", "Bilinç değişikliği"],
+          "history": ["Alkol tüketimi"],
+          "ai_prompt": "Konuşması peltek."
+        },
+        {
+          "name": "İlaç Zehirlenmesi",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "description": "Aşırı doz ilaç alımı.",
+          "symptoms": ["Uyku hali", "Kusma", "Bilinç bulanıklığı"],
+          "history": ["Yeni ilaç kullanımı"],
+          "ai_prompt": "Yavaş konuşuyor."
+        },
+        {
+          "name": "CO Zehirlenmesi",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "description": "Karbonmonoksit gazına maruziyet.",
+          "symptoms": ["Baş ağrısı", "Baş dönmesi", "Bilinç değişikliği"],
+          "history": ["Soba zehirlenmesi"],
+          "ai_prompt": "Sersemlemiş."
+        },
+        {
+          "name": "Anaerobik Enfeksiyon (Nekrotizan Fasiit)",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "description": "Hızla ilerleyen yumuşak doku enfeksiyonu.",
+          "symptoms": ["Şiddetli lokalize ağrı", "Ateş", "Kızarıklık"],
+          "history": ["Diyabet", "Travma"],
+          "ai_prompt": "Şiddetli ağrılı."
+        },
+        {
+          "name": "Akut Safra Kesesı İltihabı",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "description": "Safra kesesi enfeksiyonu.",
+          "symptoms": ["Sağ üst karın ağrısı", "Ateş", "Bulantı"],
+          "history": ["Safra taşı"],
+          "ai_prompt": "Ağrı nedeniyle yavaş konuşuyor."
+        },
+        {
+          "name": "Perforasyon (Delinmiş Ülser)",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "description": "Mide veya bağırsak duvarının yırtılması.",
+          "symptoms": ["Ani karın ağrısı", "Karın sertliği"],
+          "history": ["Ülser hastalığı"],
+          "ai_prompt": "Şiddetli ve aniden başlayan ağrı ile konuşuyor."
+        },
+        {
+          "name": "Kafa Travması",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "description": "Baş bölgesine darbe sonrası gelişen acil durum.",
+          "symptoms": ["Baş ağrısı", "Bilinç bulanıklığı", "Mide bulantısı"],
+          "history": ["Düşme", "Kaza"],
+          "ai_prompt": "Sersem ve kafa karışıklığı yaşıyor."
+        },
+        {
+          "name": "Akut Kalp Yetmezliği",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "description": "Kalbin pompa gücünün ani bozulması.",
+          "symptoms": ["Nefes darlığı", "Ödem", "Çarpıntı"],
+          "history": ["Kalp hastalığı"],
+          "ai_prompt": "Nefes nefese konuşuyor."
+        }
+      ]
+    },
+    {
+      "category": "Dahiliye",
+      "diseases": [
+        {
+          "name": "Hipertansiyon",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Baş ağrısı", "Baş dönmesi", "Yorgunluk"],
+          "description": "Kan basıncının kronik olarak yüksek seyretmesi."
+        },
+        {
+          "name": "Tip 2 Diyabet",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Aşırı susama", "Sık idrara çıkma", "Yorgunluk"],
+          "description": "İnsülin direnci nedeniyle kan şekeri kontrolünün bozulması."
+        },
+        {
+          "name": "Hipotiroidi",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Kilo alma", "Üşüme", "Yorgunluk"],
+          "description": "Tiroid hormonlarının yetersizliği ile giden tablo."
+        },
+        {
+          "name": "Hipertiroidi",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Çarpıntı", "Terleme", "Kilo kaybı"],
+          "description": "Tiroid hormonlarının aşırı üretimi."
+        },
+        {
+          "name": "Akut Gastroenterit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["İshal", "Kusma", "Karın ağrısı"],
+          "description": "Mide ve bağırsak iltihabı."
+        },
+        {
+          "name": "Gastroözofageal Reflü",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Göğüste yanma", "Ağıza acı su gelmesi"],
+          "description": "Mide asidinin yemek borusuna kaçması."
+        },
+        {
+          "name": "Demir Eksikliği Anemisi",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Yorgunluk", "Solukluk", "Nefes darlığı"],
+          "description": "Kanda demir düzeyinin düşmesine bağlı kansızlık."
+        },
+        {
+          "name": "B12 Eksikliği",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Uyuşma", "Yorgunluk", "Dikkat bozukluğu"],
+          "description": "Vitamin B12 eksikliği sonucu oluşan tablo."
+        },
+        {
+          "name": "Karaciğer Yağlanması",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Sağ üst karın ağrısı", "Yorgunluk"],
+          "description": "Karaciğer hücrelerinde yağ birikimi."
+        },
+        {
+          "name": "Kronik Böbrek Yetmezliği",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Şişkinlik", "İdrar değişiklikleri", "Yorgunluk"],
+          "description": "Böbrek fonksiyonlarının uzun süreli kaybı."
+        },
+        {
+          "name": "Akut Böbrek Yetmezliği",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["İdrar azalması", "Bilinç bulanıklığı"],
+          "description": "Böbreklerin ani fonksiyon kaybı."
+        },
+        {
+          "name": "Pnömoni (Zatürre)",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Ateş", "Öksürük", "Nefes darlığı"],
+          "description": "Akciğer dokusunun enfeksiyonu."
+        },
+        {
+          "name": "Bronşit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Öksürük", "Balgam", "Göğüs ağrısı"],
+          "description": "Bronşların iltihaplanması."
+        },
+        {
+          "name": "KOAH",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "symptoms": ["Nefes darlığı", "Kronik öksürük"],
+          "description": "Akciğerlerde hava akımının kısıtlanması."
+        },
+        {
+          "name": "Astım",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Hışıltılı solunum", "Öksürük", "Nefes darlığı"],
+          "description": "Solunum yollarının kronik inflamasyonu."
+        },
+        {
+          "name": "Peptik Ülser",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Mide ağrısı", "Yanma", "Bulantı"],
+          "description": "Mide veya duodenumda yara oluşması."
+        },
+        {
+          "name": "Safra Kesesi Taşı",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Sağ üst karın ağrısı", "Bulantı"],
+          "description": "Safra kesesinde taş birikmesi."
+        },
+        {
+          "name": "Pankreatit",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Şiddetli karın ağrısı", "Bulantı", "Ateş"],
+          "description": "Pankreasın iltihaplanması."
+        },
+        {
+          "name": "İrritabl Bağırsak Sendromu (IBS)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Karın ağrısı", "Şişkinlik", "İshal/Kabızlık"],
+          "description": "Fonksiyonel bağırsak bozukluğu."
+        },
+        {
+          "name": "Kabızlık",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Zor dışkılama", "Karın ağrısı"],
+          "description": "Bağırsak hareketlerinin yavaşlaması."
+        },
+        {
+          "name": "Anksiyete Bozukluğu",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kaygı", "Çarpıntı", "Terleme"],
+          "description": "Aşırı kaygı durumu."
+        },
+        {
+          "name": "Panik Atak",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Göğüs sıkışması", "Nefes darlığı", "Çarpıntı"],
+          "description": "Ani ve yoğun korku atağı."
+        },
+        {
+          "name": "Migren",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Baş ağrısı", "Işığa hassasiyet", "Mide bulantısı"],
+          "description": "Tek taraflı atak tarzı baş ağrısı."
+        },
+        {
+          "name": "Tansiyon Düşüklüğü",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Baş dönmesi", "Bayılma hissi"],
+          "description": "Kan basıncının düşük olması."
+        },
+        {
+          "name": "Anemi (Kansızlık)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Solukluk", "Yorgunluk"],
+          "description": "Hemoglobin seviyesinin düşmesi."
+        },
+        {
+          "name": "Artrit",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Eklem ağrısı", "Şişlik"],
+          "description": "Eklem iltihabı."
+        },
+        {
+          "name": "Romatoid Artrit",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Sabit eklem ağrısı", "Şişlik", "Yorgunluk"],
+          "description": "Otoimmün eklem hastalığı."
+        },
+        {
+          "name": "Kronik Yorgunluk Sendromu",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Uzun süreli yorgunluk", "Kas ağrısı"],
+          "description": "Nedeni bilinmeyen kalıcı yorgunluk hali."
+        },
+        {
+          "name": "Mononükleoz",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Ateş", "Boğaz ağrısı", "Lenf şişliği"],
+          "description": "EBV virüsü kaynaklı enfeksiyon."
+        },
+        {
+          "name": "Hipoglisemi",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "symptoms": ["Terleme", "Titreme", "Bilinç bozukluğu"],
+          "description": "Kan şekerinin düşmesi."
+        }
+      ]
+    },
+    {
+      "category": "Çocuk Hastalıkları",
+      "diseases": [
+        {
+          "name": "Kızamık",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Ateş", "Döküntü", "Öksürük"],
+          "description": "Virüs kaynaklı, döküntü ile seyreden çocukluk çağı hastalığı."
+        },
+        {
+          "name": "Suçiçeği",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kaşıntılı döküntü", "Ateş"],
+          "description": "Varicella virüsüyle oluşan bulaşıcı döküntülü hastalık."
+        },
+        {
+          "name": "Kızamıkçık",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Döküntü", "Lenf bezi şişliği"],
+          "description": "Hafif seyredebilen viral döküntülü hastalık."
+        },
+        {
+          "name": "Kabakulak",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Tükürük bezi şişliği", "Ateş", "Yüz ağrısı"],
+          "description": "Viral enfeksiyon sonucu tükürük bezlerinin iltihabı."
+        },
+        {
+          "name": "Bronşiolit",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Hışıltılı solunum", "Öksürük", "Nefes darlığı"],
+          "description": "Alt solunum yollarının bebeklerde sık görülen viral iltihabı."
+        },
+        {
+          "name": "Otit (Orta Kulak İltihabı)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kulak ağrısı", "Ateş"],
+          "description": "Orta kulak boşluğunun iltihabı."
+        },
+        {
+          "name": "Farenjit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Boğaz ağrısı", "Ateş"],
+          "description": "Boğaz bölgesinin viral veya bakteriyel enfeksiyonu."
+        },
+        {
+          "name": "Sinüzit",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Burun tıkanıklığı", "Baş ağrısı"],
+          "description": "Sinüslerin iltihaplanması."
+        },
+        {
+          "name": "Krup",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Havlar tarzda öksürük", "Nefes darlığı"],
+          "description": "Üst solunum yolu daralması ile seyreden viral hastalık."
+        },
+        {
+          "name": "Gastroenterit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["İshal", "Kusma"],
+          "description": "Mide-bağırsak enfeksiyonu."
+        },
+        {
+          "name": "İnfantil Kolik",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Aşırı ağlama", "Gaz sancısı"],
+          "description": "Bebeklerde görülen açıklanamayan huzursuzluk ve ağlama atakları."
+        },
+        {
+          "name": "Atopik Dermatit",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Kaşıntı", "Kuru cilt"],
+          "description": "Çocuklarda sık görülen egzama türü."
+        },
+        {
+          "name": "Gelişim Geriliği",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Konuşma gecikmesi", "Motor gelişim zayıflığı"],
+          "description": "Çocuk gelişiminde kronik gecikme."
+        },
+        {
+          "name": "Besin Alerjisi",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Döküntü", "Şişlik", "Kusma"],
+          "description": "Bazı besinlere karşı aşırı duyarlılık."
+        },
+        {
+          "name": "Laktoz İntoleransı",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Karın ağrısı", "Şişkinlik", "Gaz"],
+          "description": "Sütün içindeki laktozu sindirememe durumu."
+        },
+        {
+          "name": "İdrar Yolu Enfeksiyonu",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Ateş", "İdrar yaparken yanma"],
+          "description": "İdrar yollarının enfeksiyonu."
+        },
+        {
+          "name": "Viral ÜSYE",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Burun akıntısı", "Öksürük"],
+          "description": "Üst solunum yollarının viral enfeksiyonu."
+        },
+        {
+          "name": "El Ayak Ağız Hastalığı",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Ağız içi yaralar", "El ve ayakta döküntü"],
+          "description": "Çocuklarda görülen bulaşıcı viral hastalık."
+        },
+        {
+          "name": "Kawasaki Hastalığı",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Yüksek ateş", "Kırmızı göz", "Döküntü"],
+          "description": "Kalp damarlarını etkileyen çocukluk çağı hastalığı."
+        },
+        {
+          "name": "Yabancı Cisim Aspirasyonu",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Ani öksürük", "Hışıltılı solunum"],
+          "description": "Solunum yoluna yabancı cisim kaçması."
+        },
+        {
+          "name": "Febril Konvülsiyon",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Ateşle birlikte kasılma", "Bilinç değişikliği"],
+          "description": "Ateşe bağlı görülen nöbet."
+        },
+        {
+          "name": "Reflü (GÖRH)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kusma", "Huzursuzluk"],
+          "description": "Mide içeriğinin yemek borusuna geri kaçması."
+        },
+        {
+          "name": "Bronşiyal Astım",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Hışıltı", "Öksürük"],
+          "description": "Solunum yollarında aşırı duyarlılık."
+        },
+        {
+          "name": "Laringotrakeit",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Nefes darlığı", "Ses kısıklığı"],
+          "description": "Gırtlak ve soluk borusunun iltihabı."
+        },
+        {
+          "name": "Çölyak Hastalığı",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["İshal", "Gelişme geriliği"],
+          "description": "Gluten intoleransı sonucu bağırsak hasarı."
+        },
+        {
+          "name": "Kabızlık (Fonksiyonel)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Zor dışkılama", "Karın ağrısı"],
+          "description": "Çocuklarda sık görülen dışkılama güçlüğü."
+        },
+        {
+          "name": "Enürezis (Alt Islatma)",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Gece alt ıslatma"],
+          "description": "Çocuklarda istemsiz idrar kaçırma."
+        },
+        {
+          "name": "Skarlatina",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Döküntü", "Ateş", "Bademcik iltihabı"],
+          "description": "Beta streptokok bakterisinin neden olduğu hastalık."
+        },
+        {
+          "name": "Mononükleoz (Öpücük Hastalığı)",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Boğaz ağrısı", "Lenf şişliği"],
+          "description": "EBV virüsüyle oluşan enfeksiyon."
+        },
+        {
+          "name": "Konjonktivit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kızarıklık", "Gözde akıntı"],
+          "description": "Göz zarının iltihaplanması."
+        }
+      ]
+    },
+    {
+      "category": "Nörolojik Hastalıklar",
+      "diseases": [
+        {
+          "name": "Migren",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Tek taraflı baş ağrısı", "Işığa hassasiyet", "Bulantı"],
+          "description": "Ataklar halinde gelen şiddetli baş ağrısı."
+        },
+        {
+          "name": "Gerilim Tipi Baş Ağrısı",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Alında baskı hissi", "Boyun gerginliği"],
+          "description": "Strese bağlı gelişen hafif-orta şiddette baş ağrısı."
+        },
+        {
+          "name": "Epilepsi",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Nöbet", "Bilinç kaybı"],
+          "description": "Beyindeki anormal elektriksel aktivite ile oluşan nöbet hastalığı."
+        },
+        {
+          "name": "İnme (Stroke)",
+          "difficulty": "HARD",
+          "rarity": "COMMON",
+          "symptoms": ["Konuşma bozukluğu", "Kol-bacak güçsüzlüğü", "Yüz kayması"],
+          "description": "Beyine kan akımının kesilmesi ile oluşan acil durum."
+        },
+        {
+          "name": "Geçici İskemik Atak (TIA)",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Kısa süreli felç", "Geçici konuşma bozukluğu"],
+          "description": "İnmenin geçici ve kısa süreli formu."
+        },
+        {
+          "name": "Multipl Skleroz (MS)",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Uyuşma", "Görme kaybı", "Yorgunluk"],
+          "description": "Bağışıklık sisteminin sinir kılıfına saldırdığı kronik hastalık."
+        },
+        {
+          "name": "Parkinson Hastalığı",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "symptoms": ["Titreme", "Yavaş hareket", "Kas sertliği"],
+          "description": "Dopamin azalmasıyla ortaya çıkan hareket bozukluğu."
+        },
+        {
+          "name": "ALS (Amyotrofik Lateral Skleroz)",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Kas güçsüzlüğü", "Konuşma bozukluğu"],
+          "description": "Motor nöron kaybına bağlı ilerleyici güçsüzlük."
+        },
+        {
+          "name": "Guillain-Barré Sendromu",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Bacaklarda güçsüzlük", "Uyuşma"],
+          "description": "Bağışıklığın sinirleri hedef aldığı akut paralizi tablosu."
+        },
+        {
+          "name": "Periferik Nöropati",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Ayakta yanma", "Uyuşma", "Karıncalanma"],
+          "description": "Çevresel sinirlerde hasar."
+        },
+        {
+          "name": "Trigeminal Nevralji",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Yüzde ani elektrik çarpması gibi ağrı"],
+          "description": "Trigeminal sinirde ağrıya neden olan durum."
+        },
+        {
+          "name": "Bell Paralizisi",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Yüz felci", "Göz kapatamama"],
+          "description": "Yedinci sinirin geçici felci."
+        },
+        {
+          "name": "Menenjit",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Ensede sertlik", "Ateş", "Bilinç bozukluğu"],
+          "description": "Beyin zarlarının enfeksiyonu."
+        },
+        {
+          "name": "Beyin Tümörü",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Baş ağrısı", "Nöbet", "Görme bozukluğu"],
+          "description": "Beyinde gelişen iyi-kötü huylu kitleler."
+        },
+        {
+          "name": "Karbonmonoksit Zehirlenmesi",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Baş ağrısı", "Baş dönmesi", "Bilinç bulanıklığı"],
+          "description": "CO gazına maruz kalma sonrası gelişen nörolojik tablo."
+        },
+        {
+          "name": "Polinöropati",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Simetrik uyuşma", "Yanma"],
+          "description": "Birden çok periferik sinirin etkilenmesi."
+        },
+        {
+          "name": "Myastenia Gravis",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Kas yorgunluğu", "Göz kapağı düşüklüğü"],
+          "description": "Kas ile sinir arasındaki iletimin bozulduğu otoimmün hastalık."
+        },
+        {
+          "name": "Huzursuz Bacak Sendromu",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Ayakta huzursuzluk", "Gece artan his"],
+          "description": "Özellikle geceleri artan bacak hareket ettirme isteği."
+        },
+        {
+          "name": "Serebral Palsi",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Kas spastisitesi", "Gelişim geriliği"],
+          "description": "Doğum öncesi veya sonrası beyin hasarına bağlı hareket bozukluğu."
+        },
+        {
+          "name": "Alzheimer Hastalığı",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "symptoms": ["Hafıza kaybı", "Kafa karışıklığı"],
+          "description": "İlerleyici bir demans türü."
+        },
+        {
+          "name": "Vaskülit Kaynaklı Nörolojik Tutulum",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Uyuşma", "Güç kaybı"],
+          "description": "Damar iltihabının sinirleri etkilemesi."
+        },
+        {
+          "name": "Cluster Baş Ağrısı",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Göz çevresinde şiddetli ağrı", "Göz yaşarması"],
+          "description": "Dönemsel ataklarla gelen çok şiddetli baş ağrısı."
+        },
+        {
+          "name": "Hidrosefali",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Baş büyümesi", "Gelişim sorunları"],
+          "description": "Beyinde aşırı beyin omurilik sıvısı birikimi."
+        },
+        {
+          "name": "Nöropatik Ağrı",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Yanma", "Batma hissi"],
+          "description": "Sinir hasarına bağlı oluşan kronik ağrı."
+        },
+        {
+          "name": "Vertigo (Benign Pozisyonel Vertigo)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Baş dönmesi", "Denge kaybı"],
+          "description": "İç kulak kristallerinin yer değiştirmesi sonucu baş dönmesi."
+        },
+        {
+          "name": "Spinal Stenoz",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Bel ağrısı", "Bacaklarda uyuşma"],
+          "description": "Omurga kanalının daralması."
+        },
+        {
+          "name": "Beyin Kanaması",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Ani şiddetli baş ağrısı", "Bilinç kaybı"],
+          "description": "Beyin içine kanama gelişmesi."
+        },
+        {
+          "name": "Narkolepsi",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Gündüz aşırı uyku", "Aniden uyku atakları"],
+          "description": "Uyku-uyanıklık döngüsünün bozulması."
+        },
+        {
+          "name": "Distoni",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["İstemsiz kas kasılmaları"],
+          "description": "Kasların anormal kasılmasıyla oluşan hareket bozukluğu."
+        }
+      ]
+    },
+    {
+      "category": "Psikolojik Hastalıklar",
+      "diseases": [
+        {
+          "name": "Majör Depresif Bozukluk",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Çökkün duygu durum", "Enerji kaybı", "İştah değişimi"],
+          "description": "En az iki hafta süren belirgin depresif duygu durum ve ilgi kaybıyla seyreden hastalık."
+        },
+        {
+          "name": "Genelleştirilmiş Anksiyete Bozukluğu",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Sürekli kaygı", "Kas gerginliği", "Uyku bozukluğu"],
+          "description": "Aşırı ve kontrol edilemeyen kaygının en az 6 ay sürdüğü durum."
+        },
+        {
+          "name": "Panik Bozukluk",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Ani panik ataklar", "Çarpıntı", "Göğüs sıkışması"],
+          "description": "Beklenmedik panik ataklar ve tekrar atağa yakalanma kaygısı."
+        },
+        {
+          "name": "Obsesif Kompulsif Bozukluk (OKB)",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "symptoms": ["Takıntılı düşünceler", "Zorlayıcı tekrar davranışları", "Kaygı artışı"],
+          "description": "Kişinin kontrol edemediği obsesyon ve kompulsiyonlarla karakterize bir bozukluk."
+        },
+        {
+          "name": "Travma Sonrası Stres Bozukluğu (TSSB)",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Flaşbekler", "Kabuslar", "Aşırı uyarılmışlık"],
+          "description": "Travmatik bir olay sonrası gelişen, yeniden yaşantılama ve kaçınma belirtileriyle seyreden bozukluk."
+        },
+        {
+          "name": "Bipolar Bozukluk Tip 1",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Mani dönemleri", "Enerji artışı", "Uyku ihtiyacında azalma"],
+          "description": "Manik atakların belirgin olduğu dalgalı duygudurum bozukluğu."
+        },
+        {
+          "name": "Bipolar Bozukluk Tip 2",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "symptoms": ["Hipomani", "Depresif dönemler", "Uyku değişiklikleri"],
+          "description": "Hipomanik ve depresif dönemlerle seyreden bipolar bozukluk alt tipi."
+        },
+        {
+          "name": "Sosyal Anksiyete Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Sosyal ortamlarda yoğun kaygı", "Yüz kızarması", "Kaçınma"],
+          "description": "Toplum içinde olumsuz değerlendirilme korkusuyla ortaya çıkan kaygı bozukluğu."
+        },
+        {
+          "name": "Agorafobi",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Kaçmanın zor olduğu yerlerden kaçınma", "Panik", "Sosyal çekilme"],
+          "description": "Kişinin yardım alamayacağını düşündüğü ortamlardan kaçınmasıyla oluşan kaygı bozukluğu."
+        },
+        {
+          "name": "Akut Stres Bozukluğu",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Duyarsızlaşma", "Flashback", "Anksiyete"],
+          "description": "Travmatik olayın hemen ardından başlayan kısa süreli stres tepkileri."
+        },
+        {
+          "name": "Şizofreni",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Halüsinasyonlar", "Sanrılar", "Düşünce bozukluğu"],
+          "description": "Gerçeklik algısında ciddi bozulmalarla seyreden psikotik bozukluk."
+        },
+        {
+          "name": "Şizofreniform Bozukluk",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Sanrılar", "Halüsinasyon", "Davranış bozukluğu"],
+          "description": "Şizofreni belirtilerinin daha kısa süreli görüldüğü bozukluk."
+        },
+        {
+          "name": "Şizoaffektif Bozukluk",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Psikotik belirtiler", "Duygudurum değişimleri", "İşlev kaybı"],
+          "description": "Psikotik belirtiler ile duygudurum bozukluğu belirtilerinin birlikte görüldüğü durum."
+        },
+        {
+          "name": "Duygudurum Düzenleyememe Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Aşırı öfke patlamaları", "Duygusal dalgalanmalar", "İrritabilite"],
+          "description": "Çocuk ve ergenlerde görülen aşırı duygu kontrol güçlüğü."
+        },
+        {
+          "name": "Borderline Kişilik Bozukluğu",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "symptoms": ["Terk edilme korkusu", "Duygu dalgalanmaları", "Dürtüsellik"],
+          "description": "Kişinin ilişkilerde ve duygularında belirgin dalgalanmalar yaşadığı kişilik bozukluğu."
+        },
+        {
+          "name": "Narsistik Kişilik Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Büyüklenmecilik", "Empati eksikliği", "Beğenilme ihtiyacı"],
+          "description": "Kişinin kendini aşırı önemli görmesi ve sürekli takdir beklemesiyle karakterizedir."
+        },
+        {
+          "name": "Antisosyal Kişilik Bozukluğu",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Empati eksikliği", "Suç eğilimi", "Kurallara uymama"],
+          "description": "Başkalarının haklarını görmezden gelen kalıcı davranış örüntüsü."
+        },
+        {
+          "name": "Kaçıngan Kişilik Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Eleştirilme korkusu", "Sosyal çekilme", "Düşük özgüven"],
+          "description": "Kişinin sosyal ortamlardan yoğun kaygı nedeniyle kaçındığı bir kişilik bozukluğu."
+        },
+        {
+          "name": "Bağımlı Kişilik Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Aşırı onay ihtiyacı", "Terk edilme korkusu", "Karar verememe"],
+          "description": "Başka kişilere aşırı bağımlı olma ve kendi başına karar verememe durumu."
+        },
+        {
+          "name": "Histriyonik Kişilik Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Aşırı dramatik davranış", "İlgi odağı olma isteği", "Duygusal dalgalanmalar"],
+          "description": "Aşırı duygusal ve dikkat çekme odaklı davranışlarla karakterize kişilik bozukluğu."
+        },
+        {
+          "name": "Anoreksiya Nervosa",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Aşırı kilo kaybı", "Yemekten kaçınma", "Vücut algı bozukluğu"],
+          "description": "Kişinin kilo alma korkusuyla aşırı kısıtlı beslenmesi."
+        },
+        {
+          "name": "Bulimia Nervosa",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Aşırı yeme", "Kusma davranışı", "Duygusal yeme"],
+          "description": "Aşırı yeme atakları sonrası telafi edici davranışlarla karakterize yeme bozukluğu."
+        },
+        {
+          "name": "DEHB (Yetişkin)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Dikkat dağınıklığı", "Hiperaktivite", "Dürtüsellik"],
+          "description": "Yetişkinlikte devam eden dikkat ve odaklanma sorunları."
+        },
+        {
+          "name": "Somatizasyon Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Çeşitli fiziksel şikayetler", "Kaygı", "Tıbbi açıklama olmaması"],
+          "description": "Fiziksel belirtilere aşırı odaklanılan psikolojik bir bozukluk."
+        },
+        {
+          "name": "Konversiyon Bozukluğu",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Felç hissi", "Nöbet benzeri belirtiler", "Duyusal kayıplar"],
+          "description": "Psikolojik stresin fiziksel belirtiler şeklinde ortaya çıkması."
+        },
+        {
+          "name": "İnsomnia (Uyku Bozukluğu)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Uykuya dalamama", "Uykuyu sürdürememe", "Yorgun uyanma"],
+          "description": "Uykuya dalma veya uykuyu sürdürme güçlüğü."
+        },
+        {
+          "name": "Parasomni",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Uyurgezerlik", "Kabuslar", "Uykuda konuşma"],
+          "description": "Uyku sırasında olağan dışı davranışların görüldüğü uyku bozuklukları."
+        },
+        {
+          "name": "Madde Kullanım Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Kontrolsüz madde kullanımı", "Yoksunluk", "Tolerans artışı"],
+          "description": "Maddelere karşı kontrol kaybı ve aşırı kullanım ile karakterizedir."
+        },
+        {
+          "name": "İmpuls Kontrol Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Dürtüleri engelleyememe", "Ani davranışlar", "Sonradan pişmanlık"],
+          "description": "Kişinin impulslarını kontrol etmekte zorlandığı durum."
+        },
+        {
+          "name": "Özgül Fobi",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Belirli nesne/ortama aşırı korku", "Kaçınma", "Panik"],
+          "description": "Belirli bir nesne ya da duruma karşı yoğun ve irrasyonel korku."
+        }
+      ]
+    },
+    {
+      "category": "Diş ve Ağız Sağlığı",
+      "diseases": [
+        {
+          "name": "Diş Çürüğü (Karyes)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Tatlı hassasiyeti", "Ağrı", "Dişte siyah nokta"],
+          "description": "Diş minesinin bakteriler tarafından demineralizasyonu sonucu oluşan çürüme."
+        },
+        {
+          "name": "Diş Eti İltihabı (Gingivitis)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Diş eti kanaması", "Kızarıklık", "Şişlik"],
+          "description": "Diş etlerinin plak birikimi nedeniyle iltihaplanması."
+        },
+        {
+          "name": "Periodontitis",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Diş eti çekilmesi", "İltihap", "Dişlerde sallanma"],
+          "description": "Gingivitisin ilerleyip kemik kaybına neden olduğu ciddi diş eti hastalığı."
+        },
+        {
+          "name": "Apse (Diş Apsesi)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Şiddetli ağrı", "Yüzde şişlik", "Ateş"],
+          "description": "Diş veya çevre dokularda bakteriyel enfeksiyon sonucu oluşan iltihap birikimi."
+        },
+        {
+          "name": "Kök Ucu İltihabı (Apikal Periodontitis)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Çiğneme ağrısı", "Hassasiyet", "Geçmeyen zonklama"],
+          "description": "Diş pulpasındaki enfeksiyonun kök ucuna yayılması."
+        },
+        {
+          "name": "Pulpa İltihabı (Pulpitis)",
+          "difficulty": "HARD",
+          "rarity": "NORMAL",
+          "symptoms": ["Soğuk-sıcak hassasiyeti", "Şiddetli ağrı", "Zonklama"],
+          "description": "Dişin içindeki sinir dokusunun iltihaplanması."
+        },
+        {
+          "name": "Periodontal Kist",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Kist bölgesinde şişlik", "Ağrı", "Kemik kaybı"],
+          "description": "Periodontal dokularda gelişen kistik yapı."
+        },
+        {
+          "name": "Perikoronitis",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Yirmilik diş bölgesinde ağrı", "İltihap", "Ağız açma zorluğu"],
+          "description": "Kısmen sürmüş yirmilik diş çevresindeki yumuşak dokunun iltihaplanması."
+        },
+        {
+          "name": "Temporomandibular Eklem (TME) Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Çene kilitlenmesi", "Çene ağrısı", "Tıklama sesi"],
+          "description": "Çene ekleminde fonksiyon ve ağrı ile giden bozukluk."
+        },
+        {
+          "name": "Bruksizm (Diş Sıkma)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Diş gıcırdatma", "Çene ağrısı", "Dişlerde aşınma"],
+          "description": "Genellikle uyku sırasında farkında olmadan diş sıkma veya gıcırdatma."
+        },
+        {
+          "name": "Ağız İçinde Aft",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Ağız içi yara", "Yanma", "Ağrı"],
+          "description": "Ağız mukozasında çıkan küçük, ağrılı ülserler."
+        },
+        {
+          "name": "Ağız Kuruluğu (Xerostomia)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Ağızda kuruma", "Yutma zorluğu", "Koku"],
+          "description": "Tükürük bezlerinin yetersiz çalışması."
+        },
+        {
+          "name": "Kandidiyazis (Ağız Mantarı)",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Beyaz plaklar", "Yanma", "Tat değişikliği"],
+          "description": "Candida mantarının ağız içinde çoğalması."
+        },
+        {
+          "name": "Halitozis (Ağız Kokusu)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kötü ağız kokusu", "Ağız kuruluğu", "Tat bozukluğu"],
+          "description": "Ağız hijyenine veya enfeksiyona bağlı kötü ağız kokusu."
+        },
+        {
+          "name": "Diş Duyarlılığı (Hipersensitivite)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Soğuk-sıcak hassasiyeti", "Tatlı hassasiyeti", "Kısa süreli ağrı"],
+          "description": "Mine erozyonu veya kök yüzeyinin açığa çıkması sonucu oluşan hassasiyet."
+        },
+        {
+          "name": "Mine Hipoplazisi",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Diş yüzeyinde çukurlar", "Renk bozukluğu", "Hassasiyet"],
+          "description": "Diş minesinin yeterince gelişmemesi."
+        },
+        {
+          "name": "Fluorosis",
+          "difficulty": "EASY",
+          "rarity": "RARE",
+          "symptoms": ["Beyaz lekeler", "Mine bozukluğu", "Estetik sorunlar"],
+          "description": "Aşırı flor alımı sonucu mine yapısının etkilenmesi."
+        },
+        {
+          "name": "Diş Travması (Kırık/Çatlak)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Ağrı", "Çatlak çizgisi", "Diş parçası kaybı"],
+          "description": "Dişte travmaya bağlı kırılma, çatlak veya yer değiştirme."
+        },
+        {
+          "name": "Diş Sıkışma (Impacted Tooth)",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Ağrı", "Şişlik", "Gömülü diş"],
+          "description": "Dişin sürme yolunu tamamlayamayıp kemik içinde kalması."
+        },
+        {
+          "name": "Ortodontik Maloklüzyon",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Çapraşık dişler", "Kapanış bozukluğu", "Çiğneme zorluğu"],
+          "description": "Dişlerin kapanış ilişkilerinin bozuk olması."
+        },
+        {
+          "name": "Diş Renklenmesi",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Sarı veya kahverengi lekeler", "Estetik kaygı"],
+          "description": "Dış faktörler veya iç yapısal sebeplerle oluşan renk değişimi."
+        },
+        {
+          "name": "Alveolit (Kuru Soket)",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Çekim sonrası ağrı", "Kötü koku", "Boş soket görünümü"],
+          "description": "Diş çekim bölgesindeki pıhtının kaybıyla oluşan iltihaplı durum."
+        },
+        {
+          "name": "Ağız Kanseri",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Ağızda iyileşmeyen yara", "Kitle", "Ağrı"],
+          "description": "Ağız içi dokularda gelişen malign tümör."
+        },
+        {
+          "name": "Ortodontik Yaralanma",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Yanak tahrişi", "Aft", "Ağrı"],
+          "description": "Teller ve braketlerin yumuşak dokularda tahrişe sebep olması."
+        },
+        {
+          "name": "Disfonksiyonel Çiğneme",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Yetersiz çiğneme", "Çene ağrısı", "Sindirim sorunları"],
+          "description": "Diş dizilimindeki bozukluk veya kas/sinir etkisiyle çiğneme fonksiyonunun bozulması."
+        },
+        {
+          "name": "Biyofilm Enfeksiyonu",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Plak oluşumu", "Koku", "Çürük eğilimi"],
+          "description": "Diş yüzeylerinde birleşen bakteri topluluklarının oluşturduğu biyofilm tabakası."
+        },
+        {
+          "name": "Diş Taşı (Tartar)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Sert plak tabakası", "Koku", "Diş eti kanaması"],
+          "description": "Plakların zamanla sertleşerek taşlaşması."
+        },
+        {
+          "name": "Hipodonti",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Eksik diş", "Isırma bozukluğu", "Estetik sorun"],
+          "description": "Doğal dişlerden bir veya birkaçının gelişmemesi."
+        },
+        {
+          "name": "Mukocele",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Dudakta şişlik", "Ağrısız kist benzeri yapı"],
+          "description": "Tükürük bezinin tıkanmasıyla oluşan sıvı dolu kitle."
+        },
+        {
+          "name": "Frenulum Problemleri",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Konuşma güçlüğü", "Çekilme", "Dil hareket kısıtlılığı"],
+          "description": "Dil altı veya dudak frenulumunun anormal yapısı."
+        }
+      ]
+    },
+    {
+      "category": "Göz Kulak Burun Boğaz",
+      "diseases": [
+        {
+          "name": "Konjonktivit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Gözlerde kızarıklık", "Sulantı", "Kaşıntı"],
+          "description": "Gözün bağ dokusunun iltihaplanması."
+        },
+        {
+          "name": "Arpacık",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Göz kapağı şişliği", "Ağrı", "Hassasiyet"],
+          "description": "Göz kapağındaki yağ bezlerinin enfeksiyonu."
+        },
+        {
+          "name": "Keratit",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Işığa hassasiyet", "Göz ağrısı", "Bulanık görme"],
+          "description": "Kornea iltihaplanması."
+        },
+        {
+          "name": "Katarakt",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Bulanık görme", "Gece görüşünde azalma", "Işıklara hassasiyet"],
+          "description": "Göz merceğinin saydamlığını kaybetmesi."
+        },
+        {
+          "name": "Glokom",
+          "difficulty": "HARD",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Göz içi basıncı artışı", "Görme alanı daralması", "Baş ağrısı"],
+          "description": "Görme sinirine baskı yapan kronik göz hastalığı."
+        },
+        {
+          "name": "Makula Dejenerasyonu",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Merkezi görme kaybı", "Düz çizgilerin eğri görünmesi", "Okuma güçlüğü"],
+          "description": "Retinanın merkezinin bozulması."
+        },
+        {
+          "name": "Retina Dekolmanı",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Işık çakmaları", "Görme alanında perde inmesi", "Ani görme kaybı"],
+          "description": "Retinanın alttaki tabakadan ayrılması."
+        },
+        {
+          "name": "Blefarit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kirpik diplerinde kepeklenme", "Yanma", "Batma"],
+          "description": "Göz kapağı iltihabı."
+        },
+        {
+          "name": "Kuru Göz Sendromu",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Yanma", "Kuruluk hissi", "Batma"],
+          "description": "Gözyaşı üretiminin yetersiz olması."
+        },
+        {
+          "name": "Üveit",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Göz kızarıklığı", "Ağrı", "Işığa hassasiyet"],
+          "description": "Gözün orta tabakasının iltihaplanması."
+        },
+        {
+          "name": "Otitis Media (Orta Kulak İltihabı)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kulak ağrısı", "Ateş", "İşitme azalması"],
+          "description": "Bakteri veya virüs kaynaklı orta kulak enfeksiyonu."
+        },
+        {
+          "name": "Otitis Externa (Dış Kulak İltihabı)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Kulakta kaşıntı", "Ağrı", "Akıntı"],
+          "description": "Dış kulak kanalının iltihaplanması."
+        },
+        {
+          "name": "İşitme Kaybı",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Sesleri duymakta güçlük", "TV sesini yükseltme", "Kulak çınlaması"],
+          "description": "İşitme fonksiyonunun azalması veya kaybolması."
+        },
+        {
+          "name": "Meniere Hastalığı",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Baş dönmesi", "İşitme kaybı", "Kulak çınlaması"],
+          "description": "İç kulakta sıvı basıncı artışına bağlı denge bozukluğu."
+        },
+        {
+          "name": "Tinnitus (Kulak Çınlaması)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Kulakta uğultu", "Çınlama", "Dalgınlık"],
+          "description": "Kulağın dış kaynağı olmayan sesler algılaması."
+        },
+        {
+          "name": "Kulak Kir Tıkanması",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["İşitme azalması", "Basınç hissi", "Kulakta doluluk"],
+          "description": "Kulak kanalında aşırı kir birikmesi."
+        },
+        {
+          "name": "Sinüzit",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Yüz ağrısı", "Burun tıkanıklığı", "Geniz akıntısı"],
+          "description": "Burun çevresindeki sinüs boşluklarının iltihabı."
+        },
+        {
+          "name": "Rinit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Burun akıntısı", "Hapşırma", "Gözlerde kaşıntı"],
+          "description": "Alerjik veya enfeksiyöz burun iltihabı."
+        },
+        {
+          "name": "Burun Polipleri",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Burun tıkanıklığı", "Koku kaybı", "Geniz akıntısı"],
+          "description": "Burun içinde oluşan iyi huylu kitleler."
+        },
+        {
+          "name": "Septum Deviasyonu",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Tek taraflı burun tıkanıklığı", "Horlama", "Nefes alma güçlüğü"],
+          "description": "Burun septumunun eğik olması."
+        },
+        {
+          "name": "Larenjit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Ses kısıklığı", "Boğaz ağrısı", "Kuru öksürük"],
+          "description": "Ses tellerinin iltihaplanması."
+        },
+        {
+          "name": "Tonsillit (Bademcik İltihabı)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Boğaz ağrısı", "Ateş", "Yutma güçlüğü"],
+          "description": "Bademciklerin iltihaplanması."
+        },
+        {
+          "name": "Farenjit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Boğaz yanması", "Ağrı", "Kuru öksürük"],
+          "description": "Yutak bölgesinin iltihabı."
+        },
+        {
+          "name": "Epistaksis (Burun Kanaması)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Burun kanaması", "Baş dönmesi", "Zayıflık"],
+          "description": "Burun içindeki damarların yırtılması."
+        },
+        {
+          "name": "Vertigo",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Denge kaybı", "Baş dönmesi", "Bulantı"],
+          "description": "İç kulak kaynaklı dönme hissi."
+        },
+        {
+          "name": "Adenoid Hipertrofisi",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Ağızdan nefes alma", "Horlama", "Burun tıkanıklığı"],
+          "description": "Geniz etinin büyümesi."
+        },
+        {
+          "name": "Keratokonus",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Astigmat artışı", "Bulanık görme", "Işıklarda haleler"],
+          "description": "Kornea yapısının incelip sivrileşmesi."
+        },
+        {
+          "name": "Dakriosistit",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Gözyaşı akışı", "Burun kökünde ağrı", "Kızarıklık"],
+          "description": "Gözyaşı kesesi iltihabı."
+        },
+        {
+          "name": "Hipermetropi",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Yakın görmede zorlanma", "Göz yorgunluğu", "Baş ağrısı"],
+          "description": "Yakın mesafenin net görülememesi."
+        },
+        {
+          "name": "Miyopi",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Uzak görmede bozulma", "Göz kısmayla odaklama", "Göz yorgunluğu"],
+          "description": "Uzak mesafenin net görülememesi."
+        }
+      ]
+    },
+    {
+      "category": "Kas ve İskelet Sistemi",
+      "diseases": [
+        {
+          "name": "Kas Zorlanması",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kas ağrısı", "Hassasiyet", "Hareket kısıtlılığı"],
+          "description": "Kas liflerinin aşırı gerilmesi veya yırtılması."
+        },
+        {
+          "name": "Tendinit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Tendon bölgesinde ağrı", "Şişlik", "Hareketle artan ağrı"],
+          "description": "Tendon iltihaplanması."
+        },
+        {
+          "name": "Tenisçi Dirseği",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Dirsek dış tarafında ağrı", "Tutuş zayıflığı", "Bilek hareketinde acı"],
+          "description": "Dirsek tendonlarında aşırı kullanıma bağlı hasar."
+        },
+        {
+          "name": "Golfçü Dirseği",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Dirsek iç tarafında ağrı", "Zayıf kavrama", "Basınca hassasiyet"],
+          "description": "Dirsek iç tendonlarının iltihaplanması."
+        },
+        {
+          "name": "Bursit",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Eklem çevresinde şişlik", "Sıcaklık artışı", "Ağrı"],
+          "description": "Eklem çevresindeki sıvı keselerinin iltihaplanması."
+        },
+        {
+          "name": "Karpal Tünel Sendromu",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["El uyuşması", "Başparmak güçsüzlüğü", "Gece artan ağrı"],
+          "description": "El bileğinde median sinirin sıkışması."
+        },
+        {
+          "name": "Fibromiyalji",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Yaygın kas ağrısı", "Yorgunluk", "Uyku bozukluğu"],
+          "description": "Vücudun çeşitli bölgelerinde kronik ağrı sendromu."
+        },
+        {
+          "name": "Artrit",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Eklem ağrısı", "Şişlik", "Sertlik"],
+          "description": "Eklemlerde iltihaplanma."
+        },
+        {
+          "name": "Romatoid Artrit",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Simetrik eklem ağrısı", "Sertlik", "Şişlik"],
+          "description": "Otoimmün kaynaklı kronik eklem iltihabı."
+        },
+        {
+          "name": "Osteoartrit",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Eklem kireçlenmesi", "Hareket kısıtlılığı", "Ağrı"],
+          "description": "Eklem kıkırdağının yıpranması."
+        },
+        {
+          "name": "Skolyoz",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Omurga eğriliği", "Sırt asimetrisi", "Sırt ağrısı"],
+          "description": "Omurganın yana doğru eğilmesi."
+        },
+        {
+          "name": "Kifoz",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Sırt kamburluğu", "Sırt ağrısı", "Yorgunluk"],
+          "description": "Sırt bölgesinin aşırı yuvarlanması."
+        },
+        {
+          "name": "Lordoz",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Bel çukurunda artış", "Bel ağrısı", "Hareket kısıtlılığı"],
+          "description": "Bel bölgesinde içe doğru aşırı kavis."
+        },
+        {
+          "name": "Bel Fıtığı",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Bacağa yayılan ağrı", "Uyuşma", "Bel hareketlerinde zorluk"],
+          "description": "Omurga disklerinin sinir köküne baskı yapması."
+        },
+        {
+          "name": "Boyun Fıtığı",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Boyun ağrısı", "Kol uyuşması", "Kas güçsüzlüğü"],
+          "description": "Servikal diskin sinire baskı yapması."
+        },
+        {
+          "name": "Osteoporoz",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Kemik zayıflığı", "Kolay kırılma", "Sırt ağrısı"],
+          "description": "Kemik yoğunluğunun azalması."
+        },
+        {
+          "name": "Kas Atrofisi",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Kas erimesi", "Zayıflık", "Hacim kaybı"],
+          "description": "Kas dokusunun küçülmesi ve güç kaybı."
+        },
+        {
+          "name": "Myositis",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Kuvvetsizlik", "Kas ağrısı", "Şişlik"],
+          "description": "Kas dokusunun iltihaplanması."
+        },
+        {
+          "name": "Menisküs Yırtığı",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Dizde kilitlenme", "Ağrı", "Şişlik"],
+          "description": "Diz eklemindeki kıkırdak yapısının yırtılması."
+        },
+        {
+          "name": "Ön Çapraz Bağ (ACL) Yırtığı",
+          "difficulty": "HARD",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Dizde boşalma hissi", "Şişlik", "Stabilite kaybı"],
+          "description": "Diz stabilitesini sağlayan bağın yırtılması."
+        },
+        {
+          "name": "Omuz Çıkığı",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Omuz şekil bozukluğu", "Şiddetli ağrı", "Hareket kısıtı"],
+          "description": "Kol kemiğinin omuz yuvasından çıkması."
+        },
+        {
+          "name": "Donuk Omuz",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Hareket kısıtlılığı", "Omuz ağrısı", "Sertlik"],
+          "description": "Omuz ekleminin kapsülünün sertleşmesi."
+        },
+        {
+          "name": "Plantar Fasiit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Topuk ağrısı", "Sabah ağrısı", "Yürürken zorlanma"],
+          "description": "Ayak tabanı bağının iltihabı."
+        },
+        {
+          "name": "Halluks Valgus",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Baş parmak eğriliği", "Ayak ağrısı", "Kızarıklık"],
+          "description": "Ayak baş parmağının dışa doğru dönmesi."
+        },
+        {
+          "name": "Tetik Parmak",
+          "difficulty": "EASY",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Parmak takılması", "Ağrı", "Hareket zorluğu"],
+          "description": "Parmak tendonunun kılıf içinde sıkışması."
+        },
+        {
+          "name": "Çekiç Parmak",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Parmak eklemi bükülmesi", "Ağrı", "Tahriş"],
+          "description": "Ayak parmak ekleminin anormal kıvrılması."
+        },
+        {
+          "name": "Kas Spazmı",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Ani kas kasılması", "Ağrı", "Hareket zorluğu"],
+          "description": "Kasların kontrolsüz şekilde kasılması."
+        },
+        {
+          "name": "Stres Kırığı",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Yerelleşmiş kemik ağrısı", "Şişlik", "Yürüyüşte zorlanma"],
+          "description": "Tekrarlayan zorlanmalara bağlı küçük kemik kırıkları."
+        },
+        {
+          "name": "Kemik Enfeksiyonu (Osteomiyelit)",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Ateş", "Kemik ağrısı", "Şişlik"],
+          "description": "Kemik dokusunun bakteriyel veya fungal enfeksiyonu."
+        }
+      ]
+    },
+    {
+      "category": "Deri Hastalıkları",
+      "diseases": [
+        {
+          "name": "Kontakt Dermatit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kızarıklık", "Kaşıntı", "Kabarcık"],
+          "description": "Cilt ile temas eden maddelere karşı gelişen iltihabi reaksiyon."
+        },
+        {
+          "name": "Atopik Dermatit (Egzama)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Kuru cilt", "Kaşıntı", "Deride çatlama"],
+          "description": "Kronik ve tekrarlayan cilt iltihabı."
+        },
+        {
+          "name": "Sedef Hastalığı (Psoriasis)",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Gümüş renkli pullanma", "Kızarıklık", "Kaşıntı"],
+          "description": "Bağışıklık sistemi bozukluğuna bağlı cilt hücrelerinin hızlı çoğalması."
+        },
+        {
+          "name": "Seboreik Dermatit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kepeklenme", "Kızarıklık", "Yağlı cilt"],
+          "description": "Saç derisi ve yüz gibi yağlı bölgelerde görülen iltihabi durum."
+        },
+        {
+          "name": "Ürtiker (Kurdeşen)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kabarık döküntüler", "Kaşıntı", "Kızarıklık"],
+          "description": "Alerjik veya bilinmeyen nedenlere bağlı ciltte kabarıklık."
+        },
+        {
+          "name": "Alerjik Kontakt Dermatit",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kaşıntı", "Kabarcık", "Kızarıklık"],
+          "description": "Alerjiye neden olan maddeye temas sonrası gelişen reaksiyon."
+        },
+        {
+          "name": "Akne Vulgaris",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Sivilce", "Siyah nokta", "İltihaplı lezyon"],
+          "description": "Tıkalı kıl foliküllerinde iltihap oluşumu."
+        },
+        {
+          "name": "Rosacea (Gül Hastalığı)",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Yüzde kızarma", "Kılcal damar belirginliği", "Yanma hissi"],
+          "description": "Kronik yüz kızarması ve iltihaplanma ile seyreden hastalık."
+        },
+        {
+          "name": "Vitiligo",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Pigmentsiz beyaz lekeler", "Simetrik dağılım", "Genişleme eğilimi"],
+          "description": "Ciltte pigment kaybına neden olan otoimmün bozukluk."
+        },
+        {
+          "name": "Mantar Enfeksiyonu (Tinea)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Halka şeklinde lezyon", "Kaşıntı", "Kızarıklık"],
+          "description": "Fungal etkenlere bağlı yüzeysel cilt enfeksiyonu."
+        },
+        {
+          "name": "Tırnak Mantarı (Onikomikoz)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Tırnakta kalınlaşma", "Sarılaşma", "Kırılganlık"],
+          "description": "Tırnaklarda mantar kaynaklı bozulma."
+        },
+        {
+          "name": "Saçkıran (Alopecia Areata)",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Bölgesel saç dökülmesi", "Yuvarlak boşluklar", "Hızlı gelişme"],
+          "description": "Bağışıklık sisteminin saç köklerini hedeflemesiyle oluşan dökülme."
+        },
+        {
+          "name": "Şerit Hastalığı (Zona)",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Yanıcı ağrı", "Su kabarcıkları", "Tek taraflı cilt döküntüsü"],
+          "description": "Varicella zoster virüsünün tekrar aktivasyonu."
+        },
+        {
+          "name": "İmpetigo",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Bal rengi kabuklanma", "Kızarıklık", "Kaşıntı"],
+          "description": "Çocuklarda sık görülen bulaşıcı bakteriyel cilt enfeksiyonu."
+        },
+        {
+          "name": "Selülit",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Ciltte kızarıklık", "Sıcaklık artışı", "Ağrı"],
+          "description": "Derinin derin tabakalarını etkileyen bakteriyel enfeksiyon."
+        },
+        {
+          "name": "Kurdeşen Anjiyoödem",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Derin şişlik", "Göz ve dudak çevresi şişmesi", "Kaşıntı"],
+          "description": "Ürtikerin daha derin dokuları etkilemesi."
+        },
+        {
+          "name": "Sistit Dermatit",
+          "difficulty": "EASY",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Tahriş", "Kızarıklık", "Kaşıntı"],
+          "description": "Ciltte irritasyon sonucu oluşan hafif iltihaplanma."
+        },
+        {
+          "name": "Pitiriyazis Rosea",
+          "difficulty": "EASY",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Gövde döküntüsü", "Oval lekeler", "Hafif kaşıntı"],
+          "description": "Genellikle kendiliğinden düzelen viral kaynaklı döküntü."
+        },
+        {
+          "name": "Pitiriyazis Versikolor",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Açık veya koyu lekeler", "Pullanma", "Kaşıntı"],
+          "description": "Mayaya bağlı renk değişikliği yapan cilt enfeksiyonu."
+        },
+        {
+          "name": "Melazma",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Koyu renkli yüz lekeleri", "Simetrik dağılım", "Güneşle artma"],
+          "description": "Hormon ve güneşe bağlı cilt pigmentasyonu artışı."
+        },
+        {
+          "name": "Ben (Nevüs)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Koyu nokta", "Yükselme olabilir", "Simetrik görünüm"],
+          "description": "Derideki pigment hücrelerinin bir arada bulunduğu oluşumlar."
+        },
+        {
+          "name": "Alerjik Ürtiker",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kabarıklık", "Kaşıntı", "Hızlı ortaya çıkma"],
+          "description": "Alerjik reaksiyon sonucu gelişen cilt döküntüleri."
+        },
+        {
+          "name": "Liken Planus",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Morumsu kabarıklıklar", "Kaşıntı", "Beyaz çizgiler"],
+          "description": "Bağışıklık sistemi kaynaklı kronik cilt hastalığı."
+        },
+        {
+          "name": "Dermatofitoz",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Pullanma", "Yuvarlak lezyonlar", "Kaşıntı"],
+          "description": "Mantar enfeksiyonlarının genel adı."
+        },
+        {
+          "name": "Hiperhidroz",
+          "difficulty": "EASY",
+          "rarity": "UNCOMMON",
+          "symptoms": ["Aşırı terleme", "Islaklık", "El-ayak terlemesi"],
+          "description": "Ter bezlerinin aşırı çalışması."
+        },
+        {
+          "name": "Kseroz (Cilt Kuruluğu)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kuruluk", "Pullanma", "Kaşıntı"],
+          "description": "Nem eksikliğine bağlı cilt kuruması."
+        },
+        {
+          "name": "Gül Hastalığı Papülopüstüler Tip",
+          "difficulty": "NORMAL",
+          "rarity": "UNCOMMON",
+          "symptoms": ["İrinli kabarcıklar", "Kızarıklık", "Yanma hissi"],
+          "description": "Rosacea’nın sivilce benzeri lezyonlarla seyreden formu."
+        },
+        {
+          "name": "Kutanöz Lupus Eritematozus",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Kelebek döküntüsü", "Güneş hassasiyeti", "Kızarıklık"],
+          "description": "Bağışıklık sistemi bozukluğuna bağlı cilt tutulumu."
+        },
+        {
+          "name": "Bazal Hücreli Karsinom",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Yavaş büyüyen yara", "Kabuklanma", "Kanama"],
+          "description": "Cilt kanserinin en sık fakat en az agresif türü."
+        },
+        {
+          "name": "Melanom",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Asimetrik ben", "Renk değişimi", "Hızlı büyüme"],
+          "description": "Pigment hücrelerinden kaynaklanan ciddi cilt kanseri."
+        }
+      ]
+    },
+    {
+      "category": "Kadın ve Üreme Sağlığı",
+      "diseases": [
+        {
+          "name": "Endometriozis",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Şiddetli adet sancısı", "Cinsel ilişkide ağrı", "Kronik pelvik ağrı"],
+          "description": "Rahim iç tabakasının rahim dışına yayılmasıyla oluşan kronik ağrılı bir durum."
+        },
+        {
+          "name": "Polikistik Over Sendromu (PCOS)",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Düzensiz adet", "Tüylenme artışı", "Kilo alma"],
+          "description": "Hormonal dengesizlik nedeniyle yumurtlamanın bozulduğu yaygın bir üreme sistemi hastalığı."
+        },
+        {
+          "name": "Adenomyozis",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Ağrılı adet", "Yoğun kanama", "Pelvik ağrı"],
+          "description": "Rahim kas dokusuna endometrial dokunun yerleşmesiyle ortaya çıkan ağrılı durum."
+        },
+        {
+          "name": "Yumurtalık Kisti",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Karın ağrısı", "Şişkinlik", "Adet düzensizliği"],
+          "description": "Yumurtalıklarda gelişen sıvı dolu keseciklerdir."
+        },
+        {
+          "name": "Servikal Displazi",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Genellikle semptomsuz", "Adet dışında kanama"],
+          "description": "Rahim ağzı hücrelerinde anormal değişiklik oluşması durumudur."
+        },
+        {
+          "name": "Rahim Ağzı Kanseri",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Cinsel ilişkide kanama", "Kötü kokulu akıntı", "Pelvik ağrı"],
+          "description": "HPV enfeksiyonu ile ilişkili, rahim ağzında gelişen malign tümör."
+        },
+        {
+          "name": "Vajinal Mantar Enfeksiyonu",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kaşıntı", "Peynirimsi akıntı", "Yanma"],
+          "description": "Candida türlerinin aşırı çoğalmasıyla oluşan yaygın enfeksiyon."
+        },
+        {
+          "name": "Bakteriyel Vajinozis",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Kötü kokulu akıntı", "Hafif yanma", "Kaşıntı"],
+          "description": "Vajina flora dengesinin bozulması sonucu gelişen enfeksiyon."
+        },
+        {
+          "name": "Pelvik İnflamatuar Hastalık (PID)",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Alt karın ağrısı", "Ateş", "Kötü kokulu akıntı"],
+          "description": "Üreme organlarında enfeksiyon gelişmesiyle oluşan ciddi inflamatuar durum."
+        },
+        {
+          "name": "Rahim Miyomu",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Yoğun adet kanaması", "Basınç hissi", "Pelvik ağrı"],
+          "description": "Rahim duvarında gelişen iyi huylu tümörlerdir."
+        },
+        {
+          "name": "Yumurtalık Kanseri",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Şişkinlik", "Karın ağrısı", "Kilo kaybı"],
+          "description": "Yumurtalıklardan kaynaklanan agresif seyirli malign tümör."
+        },
+        {
+          "name": "Premenstrüel Sendrom (PMS)",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Duygusal dalgalanma", "Şişkinlik", "Baş ağrısı"],
+          "description": "Adet öncesinde ortaya çıkan fiziksel ve duygusal belirtiler bütünü."
+        },
+        {
+          "name": "Premenstrüel Disforik Bozukluk (PMDD)",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Ağır ruh hali değişimleri", "Sinirlilik", "Yorgunluk"],
+          "description": "PMS’nin daha ağır ve psikolojik belirtilerin baskın olduğu formu."
+        },
+        {
+          "name": "Dismenore",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Ağrılı adet", "Bulantı", "Sırt ağrısı"],
+          "description": "Adet döneminde rahim kasılmalarına bağlı gelişen ağrı."
+        },
+        {
+          "name": "Ektopik Gebelik",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Keskin karın ağrısı", "Lekelenme", "Bayılma"],
+          "description": "Döllenmiş yumurtanın rahim dışında (genelde tüpte) yerleşmesi."
+        },
+        {
+          "name": "Gebelik Zehirlenmesi (Preeklampsi)",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Yüksek tansiyon", "Baş ağrısı", "El-ayak şişmesi"],
+          "description": "Gebelikte görülen yüksek tansiyon ve organ hasarıyla seyreden ciddi durum."
+        },
+        {
+          "name": "Doğum Sonrası Depresyon",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Aşırı üzüntü", "İlgi kaybı", "Yorgunluk"],
+          "description": "Doğumdan sonra ortaya çıkan ciddi depresif durum."
+        },
+        {
+          "name": "Vajinusmus",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Cinsel ilişkiye girememe", "Kasılma", "Ağrı"],
+          "description": "Vajina çevresindeki kasların istemsiz kasılması sonucu ilişkiye engel olması."
+        },
+        {
+          "name": "Kısırlık (İnfertilite)",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Çocuk sahibi olamama", "Düzensiz adet", "Hormon dengesizliği"],
+          "description": "Bir yıl korunmasız ilişkiye rağmen gebelik elde edilememesi."
+        },
+        {
+          "name": "Menopoz",
+          "difficulty": "EASY",
+          "rarity": "COMMON",
+          "symptoms": ["Adet kesilmesi", "Sıcak basması", "Gece terlemesi"],
+          "description": "Doğal hormon düşüşüne bağlı doğurganlığın sona ermesi."
+        },
+        {
+          "name": "Over Torsiyonu",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Ani karın ağrısı", "Bulantı", "Kusma"],
+          "description": "Yumurtalığın kendi etrafında dönerek kan akışını kesmesi."
+        },
+        {
+          "name": "Rahim Kanseri (Endometrium Kanseri)",
+          "difficulty": "HARD",
+          "rarity": "RARE",
+          "symptoms": ["Adet dışı kanama", "Pelvik ağrı", "Kilo kaybı"],
+          "description": "Rahim iç tabakasından gelişen malign tümör."
+        },
+        {
+          "name": "Vulvit",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Kızarıklık", "Kaşıntı", "Yanma"],
+          "description": "Dış genital bölgenin iltihaplanması."
+        },
+        {
+          "name": "Vulvodini",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Kronik vulva ağrısı", "Yanma", "Hassasiyet"],
+          "description": "Nedeni bilinmeyen uzun süreli vulva ağrısı."
+        },
+        {
+          "name": "Lohusalık Ateşi",
+          "difficulty": "NORMAL",
+          "rarity": "RARE",
+          "symptoms": ["Ateş", "Terleme", "Pelvik ağrı"],
+          "description": "Doğum sonrası gelişen enfeksiyon kaynaklı ateş."
+        },
+        {
+          "name": "Gebelik Diyabeti",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Aşırı susama", "Açlık hissi", "Yorgunluk"],
+          "description": "Gebelik sırasında gelişen geçici diyabet."
+        },
+        {
+          "name": "Rahim Sarkması",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Kasıkta baskı hissi", "Bel ağrısı", "İdrar kaçırma"],
+          "description": "Pelvik kasların zayıflaması nedeniyle rahmin aşağı doğru sarkması."
+        },
+        {
+          "name": "Yumurtlama Bozukluğu",
+          "difficulty": "NORMAL",
+          "rarity": "COMMON",
+          "symptoms": ["Düzensiz adet", "Kısırlık", "Hormon dalgalanması"],
+          "description": "Ovülasyonun düzensiz veya hiç olmaması durumu."
+        },
+        {
+          "name": "Polimenore",
+          "difficulty": "EASY",
+          "rarity": "NORMAL",
+          "symptoms": ["Sık adet görme", "Kısa döngü", "Hafif ağrı"],
+          "description": "Adet döngüsünün 21 günden kısa olması."
+        },
+        {
+          "name": "Amenore",
+          "difficulty": "NORMAL",
+          "rarity": "NORMAL",
+          "symptoms": ["Adet görememe", "Hormonal dengesizlik", "Kısırlık"],
+          "description": "Adet kanamasının 3 ay veya daha uzun süre kesilmesi."
+        }
+      ]
+    }
+  ]
+}
