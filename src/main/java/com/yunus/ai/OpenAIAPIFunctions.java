@@ -108,6 +108,7 @@ public class OpenAIAPIFunctions {
 
     public void resetMessages(){
         messages.clear();
+        logger = new Logger();
     }
 
     private OpenAIAPIFunctions(){}

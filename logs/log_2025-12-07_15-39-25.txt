@@ -1,0 +1,6 @@
+User: merhaba sıkıntın nedir
+AI: Merhaba doktor hanım/bey. Son zamanlarda kendimi çok yorgun hissediyorum. Daha önce yapabildiğim işler beni daha çabuk yoruyor gibi. Ayrıca yüzümde ve ellerimde biraz solgunluk fark ettim. Bunlar beni endişelendiriyor. Sizce ne olabilir?
+User: biraz daha anlat açıkla
+AI: Tabii, biraz daha detaylandırayım. Sabahları uyandığımda genellikle yorgun hissediyorum ve gün boyu bu yorgunluk geçmiyor. Günlük aktivitelerimi yaparken bile enerjim çabuk tükeniyor. Merdiven çıkmak ya da biraz yürüyüş yapmak bile beni oldukça yoruyor. Aynada kendime baktığımda tenimin eskisinden daha solgun göründüğünü fark ettim. Önceden bu tarz belirtilerim yoktu, o yüzden bu değişiklikler beni endişelendirdi. Başka sorularınızı yanıtlamaktan memnuniyet duyarım.
+User: sıkıntın nedir
+AI: Bir süredir gerçekten şiddetli bir baş ağrısı yaşıyorum. Baş ağrısı bazen daha da kötüsü oluyor ve gözlerim bulanık görmeye başlıyor. Ayrıca arada sırada burnum da kanıyor. Bu durum beni iyice endişelendirmeye başladı.
