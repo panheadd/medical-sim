@@ -4,14 +4,12 @@ import javazoom.jl.player.Player;
 import okhttp3.*;
 import com.google.gson.*;
 
-import java.io.ByteArrayInputStream;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class OpenAIAPIFunctions {
     private static OpenAIAPIFunctions openAIAPIFunctions;
+    private Logger logger = new Logger();
     private static final String API_URL = "https://api.openai.com/v1/chat/completions";
     private static final String apiKey = System.getenv("OPENAI_API_KEY");
 
@@ -32,6 +30,8 @@ public class OpenAIAPIFunctions {
         userMessage.put("role", "user");
         userMessage.put("content", input);
         messages.add(userMessage);
+
+        logger.saveMessage("User: " + input);
         //Thread.sleep(1000);
     }
 
@@ -68,6 +68,7 @@ public class OpenAIAPIFunctions {
             assistantMessage.put("role", "assistant");
             assistantMessage.put("content", reply);
             messages.add(assistantMessage);
+            logger.saveMessage("AI: " + reply);
             return reply;
         }
     }
@@ -184,4 +185,5 @@ public class OpenAIAPIFunctions {
     public void printMessages(){
         System.out.println(messages);
     }
+
 }
