@@ -79,18 +79,32 @@ public class PromptGenerator {
         return promptGenerator;
     }
     public String generatePrompt(){
-        Disease disease = getDisease();
-        System.out.println(disease.getName());
+        Disease d = getDisease();
+        System.out.println(d.getName());
         finalPrompt = basePrompt;
-        if (generateCategoryPrompt() != null){
-            finalPrompt = finalPrompt+generateCategoryPrompt();
-        }
-        if (generateDifficultyPrompt() != null){
-            finalPrompt = finalPrompt+generateDifficultyPrompt();
-        }
-        if (generateRarityPrompt() != null){
-            finalPrompt = finalPrompt+generateRarityPrompt();
-        }
+
+        String finalPrompt = basePrompt + "\n\n" +
+                "Aşağıdaki bilgiler sadece senin içindir ve kullanıcıya asla direkt söyleme. " +
+                "Sadece davranış ve semptomlarınla hissettir.\n\n" +
+                "--- HASTA PROFİLİ ---\n" +
+                "Hastalık Adı: " + d.getName() + "\n" +
+                "Hastalık Semptomları: " + String.join(", ", d.getSymptoms()) + "\n" +
+                "Hastalık Açıklaması: " + d.getDescription() + "\n" +
+                "---------------------\n\n" +
+                "Bu bilgiler ışığında gerçek bir hasta gibi konuş.\n" +
+                "Bilgileri direkt söyleme.\n\n" +
+
+                "Bu hastalığa tıbben uygun olan ek semptomlar üretebilirsin.\n" +
+                "Ancak:\n" +
+                "- Temel semptomlarla uyumlu olmalı,\n" +
+                "- Hastalığın tıbbi tablosuna uygun olmalı,\n" +
+                "- Abartılı veya alışılmadık semptomlar uydurma,\n" +
+                "- \"Semptom uyduruyorum\" demeden doğal bir hasta gibi davran.\n\n" +
+
+                "Cevaplarında sadece hastanın deneyimini anlat.\n" +
+                "Hastalığın adını veya tıbbi bilgileri söyleme.\n" +
+                "Sadece bir hasta gibi cevap ver.\n";
+
         if (generateMoodPrompt() != null){
             finalPrompt = finalPrompt+generateMoodPrompt();
         }
@@ -209,6 +223,7 @@ public class PromptGenerator {
 
     private Disease getDisease() {
         DiseaseFinder finder = new DiseaseFinder(DiseaseLoader.getInstance().load("Diseases.json"));
+        System.out.println(category);
 
         String diff = (difficulty == null) ? "" : difficulty.name();
         String rar  = (rarity == null)     ? "" : rarity.name();
