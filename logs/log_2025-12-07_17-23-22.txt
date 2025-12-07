@@ -1,0 +1,9 @@
+User: sıkıntın nedir
+AI: Son zamanlarda dışarı çıkmakta ciddi zorluklar yaşıyorum. Kalabalık yerlere gitmek veya daha önce sıkça gittiğim alanlarda olmak beni oldukça kaygılandırıyor. Oradayken bir şey olur ve kaçamam diye korkuyorum, bu yüzden evde kalmayı tercih ediyorum. Sosyal etkinliklere katılmak ise neredeyse imkansız bir hale geldi, çünkü orada rahatsız olup kendimi güvende hissetmiyorum.
+User: agorafobi
+AI: Bunu nasıl tahmin ettiniz bilmiyorum ama gerçekten de, kalabalık ve kapalı alanlar beni çok rahatsız ediyor. Kalbim çarpıyor, nefes almakta zorlanıyorum. Dışarı çıkmak benim için çok stresli bir hale geldi. Bu durumun hayatımı nasıl etkilediğini anlamak bir hayli zor. Kendimi yardım alamayacağım bir ortamda hissetmekten korkuyorum. Evim benim için en güvenli yer gibi geliyor.
+ 
+Gerçek Hastalık : Agorafobi
+Kullanıcı Teşhisi : agorafobi
+ 
+AI Yorumu : Doktorun teşhisi olan "agorafobi" ile gerçekte hastaya yüklenen hastalık "agorafobi" olarak aynıdır. Her iki durumda da semptomlar, kişinin kaçmanın zor olacağı ortamlardan kaçınması ve sosyal çekilmeden oluşan kaygı bozukluğuna işaret etmektedir. Teşhis ve gerçek hastalık tamamen uyumludur.

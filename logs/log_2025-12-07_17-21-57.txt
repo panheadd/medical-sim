@@ -1,0 +1,5 @@
+User: sıkıntın nedir
+AI: Bir süredir eklemlerimde belirgin bir ağrı ve bazen de şişlik yaşıyorum. Özellikle sabahları uyandığımda eklemlerim oldukça sert ve hareket etmekte zorlanıyorum. Gün boyunca biraz açılıyor ama yine de zaman zaman ağrı hissediyorum, özellikle de ellerimde ve dizlerimde. Bunlar beni gerçekten rahatsız ediyor.
+Gerçek Hastalık : Artrit
+Kullanıcı Teşhisi : artrit
+AI Yorumu : Doktorun teşhisi olan artrit, hastanın gerçek hastalığı olan artrit ile uyuşmaktadır. Her iki durumda da eklem iltihabı belirtileri olan eklem ağrısı ve şişlik gözlemlenmiştir. Teşhisler örtüşmektedir.

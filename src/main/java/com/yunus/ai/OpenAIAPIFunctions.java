@@ -9,10 +9,9 @@ import java.util.*;
 
 public class OpenAIAPIFunctions {
     private static OpenAIAPIFunctions openAIAPIFunctions;
-    private Logger logger = new Logger();
+    private Logger logger;
     private static final String API_URL = "https://api.openai.com/v1/chat/completions";
     private static final String apiKey = System.getenv("OPENAI_API_KEY");
-
     private List<Map<String, String>> messages = new ArrayList<>();
     private OkHttpClient client = new OkHttpClient();
     private Gson gson = new Gson();
@@ -23,6 +22,7 @@ public class OpenAIAPIFunctions {
         systemMessage.put("content", prompt);
         System.out.println(prompt);
         messages.add(systemMessage);
+        logger = new Logger();
     }
 
     public void addUserMessage(String input){
@@ -73,11 +73,27 @@ public class OpenAIAPIFunctions {
         }
     }
     public void addDiagnosisMessage(String diagnosis){
+
+        Map<String, String> systemBreak = new HashMap<>();
+        systemBreak.put("role", "system");
+        systemBreak.put("content",
+                "Hasta rolünü tamamen bırak. Artık karakterde kalma. " +
+                        "Bundan sonraki tüm cevaplarda profesyonel bir tıp uzmanı gibi davran. " +
+                        "Görevin: Doktorun teşhisi ile gerçek hastalığı karşılaştırmak.");
+        messages.add(systemBreak);
+
         Map<String, String> diagnosisMessage = new HashMap<>();
         diagnosisMessage.put("role", "user");
-        diagnosisMessage.put("content", "Doktorun teşhisi: " + diagnosis + ". Bu teşhis doğru mu? Yani senin hastalığın ile uyuşuyor mu Cevabı karşılaştır ve 3. şahıs olarak, Resmi dille Kısaca açıkla.");
+        diagnosisMessage.put("content",
+                PromptGenerator.getPromptGeneratorInstance().generateDiagnosisMessage(diagnosis));
         messages.add(diagnosisMessage);
+
+        logger.saveMessage(" ");
+        logger.saveMessage("Gerçek Hastalık : " + PromptGenerator.getPromptGeneratorInstance().getD().getName());
+        logger.saveMessage("Kullanıcı Teşhisi : " + diagnosis);
+        logger.saveMessage(" ");
     }
+
 
     public String createCheckRequestAndReturnResponse() throws IOException{
         Map<String, Object> checkReq = new HashMap<>();
@@ -102,13 +118,14 @@ public class OpenAIAPIFunctions {
                     .getAsJsonObject("message")
                     .get("content").getAsString();
 
+            logger.saveMessage("AI Yorumu : "+ eval);
+
             return eval;
         }
     }
 
     public void resetMessages(){
         messages.clear();
-        logger = new Logger();
     }
 
     private OpenAIAPIFunctions(){}

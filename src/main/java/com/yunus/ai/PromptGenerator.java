@@ -5,6 +5,7 @@ import java.util.List;
 public class PromptGenerator {
     private static PromptGenerator promptGenerator;
     private final DiseaseLoader diseaseLoader = DiseaseLoader.getInstance();
+    private Disease d;
     enum Mood1{
         PASSIVE,
         NORMAL,
@@ -79,7 +80,7 @@ public class PromptGenerator {
         return promptGenerator;
     }
     public String generatePrompt(){
-        Disease d = getDisease();
+         d = getRandomDisease();
         System.out.println(d.getName());
         finalPrompt = basePrompt;
 
@@ -221,7 +222,7 @@ public class PromptGenerator {
         }
     }
 
-    private Disease getDisease() {
+    private Disease getRandomDisease() {
         DiseaseFinder finder = new DiseaseFinder(DiseaseLoader.getInstance().load("Diseases.json"));
         System.out.println(category);
 
@@ -231,5 +232,16 @@ public class PromptGenerator {
         return finder.getRandomDisease(category, diff, rar);
     }
 
+    public String generateDiagnosisMessage(String diagnosis){
+        return
+                "Doktorun teşhisi: " + diagnosis + "\n" +
+                        "Gerçek hastalık: " + d.getName() + "\n\n" +
+                        "Bu iki teşhis uyuşuyor mu? " +
+                        "Gerçek hastalık ile doktorun verdiği teşhisi karşılaştır. " +
+                        "3. şahıs ağzıyla, resmi ve kısa bir açıklama yap.";
+    }
 
+    public Disease getD() {
+        return d;
+    }
 }
