@@ -1,0 +1,7 @@
+User: sıkıntın nedir
+AI: Son zamanlarda sağ üst tarafımdaki karın bölgemde hafif bir ağrı hissediyorum. Ayrıca kendimi sürekli yorgun ve bitkin hissediyorum. Ne kadar dinlensem de bu yorgunluk bir türlü geçmiyor. Ne olabilir acaba?
+ 
+Gerçek Hastalık : Karaciğer Yağlanması
+Kullanıcı Teşhisi : karaciğer yağlanması
+ 
+AI Yorumu : Doktorun teşhisi ve gerçek hastalık birbirleriyle uyuşmaktadır. Her iki teşhis de "Karaciğer Yağlanması" olarak belirtilmiştir. Bu durum, karaciğer hücrelerinde yağ birikimi olduğu anlamına gelir ve hastada görülen belirtilerle de uyumludur.

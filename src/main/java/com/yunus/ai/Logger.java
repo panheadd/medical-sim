@@ -11,9 +11,10 @@ public class Logger {
     private final String filePath;
 
     public Logger() {
-        String folderName = "logs";
-        File folder = new File(folderName);
 
+        String basePath = PathUtils.getJarDir();
+
+        File folder = new File(basePath, "logs");
         if (!folder.exists()) {
             folder.mkdirs();
         }
@@ -21,8 +22,9 @@ public class Logger {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
         String dateTime = LocalDateTime.now().format(formatter);
 
-        this.filePath = folderName + "/log_" + dateTime + ".txt";
+        this.filePath = new File(folder, "log_" + dateTime + ".txt").getAbsolutePath();
     }
+
     public void saveMessage(String message) {
         try (FileWriter writer = new FileWriter(filePath, true)) {
             writer.write(message + System.lineSeparator());

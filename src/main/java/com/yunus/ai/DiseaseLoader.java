@@ -1,6 +1,9 @@
 package com.yunus.ai;
 
+
 import com.google.gson.Gson;
+
+import java.io.File;
 import java.io.FileReader;
 
 public class DiseaseLoader {
@@ -16,19 +19,31 @@ public class DiseaseLoader {
         return instance;
     }
 
-    public DiseaseData load(String filePath) {
+    public DiseaseData load() {
         if (cachedData != null)
             return cachedData;
 
         try {
+            String basePath = PathUtils.getJarDir();
+
+            File jsonFile = new File(basePath, "Diseases.json");
+
+            if (!jsonFile.exists()) {
+                System.err.println("Diseases.json bulunamadı: " + jsonFile.getAbsolutePath());
+                return null;
+            }
+
             Gson gson = new Gson();
-            FileReader reader = new FileReader(filePath);
+            FileReader reader = new FileReader(jsonFile);
             cachedData = gson.fromJson(reader, DiseaseData.class);
+
             return cachedData;
+
         } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
     }
 }
+
 

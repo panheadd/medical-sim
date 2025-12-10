@@ -1,5 +1,6 @@
 package com.yunus.ai;
 
+import java.io.File;
 import java.util.List;
 
 public class PromptGenerator {
@@ -223,7 +224,7 @@ public class PromptGenerator {
     }
 
     private Disease getRandomDisease() {
-        DiseaseFinder finder = new DiseaseFinder(DiseaseLoader.getInstance().load("Diseases.json"));
+        DiseaseFinder finder = new DiseaseFinder(DiseaseLoader.getInstance().load());
         System.out.println(category);
 
         String diff = (difficulty == null) ? "" : difficulty.name();

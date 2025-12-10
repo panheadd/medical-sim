@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        DiseaseData data = DiseaseLoader.getInstance().load("Diseases.json");
+        DiseaseData data = DiseaseLoader.getInstance().load();
 
         for (DiseaseCategory category : data.getCategories()) {
             System.out.println("Kategori: " + category.getName());

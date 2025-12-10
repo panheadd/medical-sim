@@ -11,7 +11,7 @@ public class OpenAIAPIFunctions {
     private static OpenAIAPIFunctions openAIAPIFunctions;
     private Logger logger;
     private static final String API_URL = "https://api.openai.com/v1/chat/completions";
-    private static final String apiKey = System.getenv("OPENAI_API_KEY");
+    private static final String apiKey = EnvLoader.get("OPENAI_API_KEY");
     private List<Map<String, String>> messages = new ArrayList<>();
     private OkHttpClient client = new OkHttpClient();
     private Gson gson = new Gson();
