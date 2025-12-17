@@ -15,7 +15,7 @@ public class DiseaseFinder {
 
         DiseaseCategory category = data.getCategories()
                 .stream()
-                .filter(c -> c.getName().equalsIgnoreCase(categoryName))
+                .filter(c -> c.getCategory().equalsIgnoreCase(categoryName))
                 .findFirst()
                 .orElse(null);
 

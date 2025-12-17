@@ -31,90 +31,7 @@ public class SettingsPage extends JPanel {
 
         Font moodFont = new Font("Arial", Font.PLAIN, 18);
 
-        JPanel row1 = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        JRadioButton passiveButton = new JRadioButton("Pasif");
-        JRadioButton normalButton = new JRadioButton("Normal");
-        JRadioButton aggressiveButton = new JRadioButton("Agresif");
-        passiveButton.setFont(moodFont);
-        normalButton.setFont(moodFont);
-        aggressiveButton.setFont(moodFont);
 
-        passiveButton.addActionListener(e -> promptGenerator.setMood1(PromptGenerator.Mood1.PASSIVE));
-        normalButton.addActionListener(e -> promptGenerator.setMood1(PromptGenerator.Mood1.NORMAL));
-        aggressiveButton.addActionListener(e -> promptGenerator.setMood1(PromptGenerator.Mood1.AGGRESSIVE));
-
-        ButtonGroup group1 = new ButtonGroup();
-        group1.add(passiveButton);
-        group1.add(normalButton);
-        group1.add(aggressiveButton);
-
-        row1.add(passiveButton);
-        row1.add(normalButton);
-        row1.add(aggressiveButton);
-
-        JPanel row2 = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        JRadioButton quietButton = new JRadioButton("Sessiz");
-        JRadioButton normalButton2 = new JRadioButton("Normal");
-        JRadioButton chattyButton = new JRadioButton("Konuşkan");
-        quietButton.setFont(moodFont);
-        normalButton2.setFont(moodFont);
-        chattyButton.setFont(moodFont);
-
-        quietButton.addActionListener(e -> promptGenerator.setMood2(PromptGenerator.Mood2.QUIET));
-        normalButton2.addActionListener(e -> promptGenerator.setMood2(PromptGenerator.Mood2.NORMAL));
-        chattyButton.addActionListener(e -> promptGenerator.setMood2(PromptGenerator.Mood2.CHATTY));
-
-        ButtonGroup group2 = new ButtonGroup();
-        group2.add(quietButton);
-        group2.add(normalButton2);
-        group2.add(chattyButton);
-
-        row2.add(quietButton);
-        row2.add(normalButton2);
-        row2.add(chattyButton);
-
-        JPanel row3 = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        JRadioButton nervousButton = new JRadioButton("Endişeli");
-        JRadioButton normalbutton3 = new JRadioButton("Normal");
-        JRadioButton confidentButton = new JRadioButton("Kendinden Emin");
-        nervousButton.setFont(moodFont);
-        normalbutton3.setFont(moodFont);
-        confidentButton.setFont(moodFont);
-
-        nervousButton.addActionListener(e -> promptGenerator.setMood3(PromptGenerator.Mood3.NERVOUS));
-        normalbutton3.addActionListener(e -> promptGenerator.setMood3(PromptGenerator.Mood3.NORMAL));
-        confidentButton.addActionListener(e -> promptGenerator.setMood3(PromptGenerator.Mood3.CONFIDENT));
-
-        ButtonGroup group3 = new ButtonGroup();
-        group3.add(nervousButton);
-        group3.add(normalbutton3);
-        group3.add(confidentButton);
-
-        row3.add(nervousButton);
-        row3.add(normalbutton3);
-        row3.add(confidentButton);
-
-
-        JPanel row4 = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        JRadioButton guardedButton = new JRadioButton("Kapalı");
-        JRadioButton normalbutton4 = new JRadioButton("Normal");
-        JRadioButton openButton = new JRadioButton("Açık");
-        guardedButton.setFont(moodFont);
-        normalbutton4.setFont(moodFont);
-        openButton.setFont(moodFont);
-
-        guardedButton.addActionListener(e -> promptGenerator.setMood4(PromptGenerator.Mood4.GUARDED));
-        normalbutton4.addActionListener(e -> promptGenerator.setMood4(PromptGenerator.Mood4.NORMAL));
-        openButton.addActionListener(e -> promptGenerator.setMood4(PromptGenerator.Mood4.OPEN));
-
-        ButtonGroup group4 = new ButtonGroup();
-        group4.add(guardedButton);
-        group4.add(normalbutton4);
-        group4.add(openButton);
-
-        row4.add(guardedButton);
-        row4.add(normalbutton4);
-        row4.add(openButton);
 
         JPanel row5 = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
         JRadioButton easyButton = new JRadioButton("Kolay");
@@ -159,27 +76,16 @@ public class SettingsPage extends JPanel {
         row6.add(normalbutton6);
         row6.add(rareButton);
 
-        JLabel subTitle = new JLabel("Hasta Kişilik Özellikleri");
-        subTitle.setFont(new Font("Arial", Font.BOLD, 20));
-        subTitle.setBorder(BorderFactory.createEmptyBorder(15, 0, 10, 0)); // sola boşluk (20 px)
-        subTitle.setAlignmentX(Component.CENTER_ALIGNMENT); // sola hizalama
-
         JLabel hastalikSubTitle = new JLabel("Hastalık Özellikleri");
         hastalikSubTitle.setFont(new Font("Arial", Font.BOLD, 20));
-        hastalikSubTitle.setBorder(BorderFactory.createEmptyBorder(15, 0, 10, 0)); // sola boşluk (20 px)
-        hastalikSubTitle.setAlignmentX(Component.CENTER_ALIGNMENT); // sola hizalama
+        hastalikSubTitle.setBorder(BorderFactory.createEmptyBorder(15, 0, 10, 0));
+        hastalikSubTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         centerPanel.add(hastalikSubTitle);
 
         centerPanel.add(row5);
         centerPanel.add(row6);
 
-        centerPanel.add(subTitle);
-
-        centerPanel.add(row1);
-        centerPanel.add(row2);
-        centerPanel.add(row3);
-        centerPanel.add(row4);
 
         add(centerPanel, BorderLayout.CENTER);
 
