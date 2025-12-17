@@ -13,7 +13,6 @@ public class DiseaseFinder {
 
     public Disease getRandomDisease(String categoryName, String difficulty, String rarity) {
 
-        // 1) Kategori bul
         DiseaseCategory category = data.getCategories()
                 .stream()
                 .filter(c -> c.getName().equalsIgnoreCase(categoryName))
@@ -25,10 +24,8 @@ public class DiseaseFinder {
             return null;
         }
 
-        // 2) Kategorideki tüm hastalıkları al
         List<Disease> diseases = category.getDiseases();
 
-        // 3) Filtre uygula (difficulty ve rarity opsiyonel)
         List<Disease> filtered = diseases.stream()
                 .filter(d -> difficulty == null || difficulty.isBlank() ||
                         d.getDifficulty().equalsIgnoreCase(difficulty))
@@ -41,7 +38,6 @@ public class DiseaseFinder {
             return null;
         }
 
-        // 4) Random birini seç
         Random rnd = new Random();
         return filtered.get(rnd.nextInt(filtered.size()));
     }

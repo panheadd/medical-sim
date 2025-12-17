@@ -1,0 +1,7 @@
+User: sıkıntın ne
+AI: Son zamanlarda sürekli başım ağrıyor, özellikle günün ilerleyen saatlerinde bu ağrılar artıyor. Bunun yanı sıra, başım bazen dönüyor ve genel olarak kendimi çok yorgun hissediyorum. Normalde yaptığım işler bile bana zor gelir hale geldi. Bazen sabahları uyandığımda bile dinlenmiş hissetmiyorum. Bunlar beni gerçekten endişelendiriyor.
+ 
+Gerçek Hastalık : Hipertansiyon
+Kullanıcı Teşhisi : grip
+ 
+AI Yorumu : Verilen teşhisler uyuşmamaktadır. Grip, genellikle viral bir enfeksiyon sonucu ortaya çıkan ve ateş, öksürük, boğaz ağrısı gibi semptomlarla ortaya çıkan bir hastalıktır. Hipertansiyon ise, kan basıncının kronik olarak yüksek olması durumu olup baş ağrısı, baş dönmesi ve yorgunluk gibi semptomlarla karakterizedir. İki hastalığın belirtileri ve nedenleri farklıdır. Dolayısıyla, doktorun teşhisi gerçek hastalıkla örtüşmemektedir.

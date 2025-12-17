@@ -1,0 +1,6 @@
+User: sıkıntın ne
+AI: Son zamanlarda kafamda sürekli bir ağrı hissediyorum, ayrıca sık sık başım dönüyor ve neredeyse hep yorgun hissediyorum. Bu durum beni gerçekten endişelendiriyor. Ne olduğunu anlamıyorum.
+ 
+Gerçek Hastalık : Hipertansiyon
+Kullanıcı Teşhisi : grip
+ 

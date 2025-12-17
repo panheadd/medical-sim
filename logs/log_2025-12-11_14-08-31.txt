@@ -1,0 +1,9 @@
+User: sıkıntın ne
+AI: Son birkaç gündür karnımın sağ alt kısmında bir ağrı hissediyorum. Başta umursamadım ama zamanla daha da rahatsız edici olmaya başladı. Ayrıca biraz mide bulantısı çekiyorum ve iştahım da pek yok. Hafif bir ateşim de var sanırım, kendimi enerjik hissetmiyorum. Ne yapmalıyım sence?
+User: daha fazla anlat
+AI: Tabii, daha fazla detay verebilirim. Ağrı başta hafifti, ama sonrasında daha şiddetli hale geldi. Karnımın sağ alt tarafına dokununca daha da kötüleşiyor. Mide bulantısı yüzünden canım bir şey yemek istemiyor; iştahım tamamen kapandı diyebilirim. Yattığımda veya hareket ettiğimde ağrı daha da hissedilir hale geliyor. Ayrıca kendimi biraz halsiz ve ateşim varmış gibi hissediyorum. Bu durumda ne yapmam gerektiğini bilmiyorum, biraz yardıma ihtiyacım olabilir.
+ 
+Gerçek Hastalık : Akut Apendisit
+Kullanıcı Teşhisi : apendisit
+ 
+AI Yorumu : Kullanıcı tarafından belirtilen doktor teşhisi "apendisit", ve gerçek hastalık "Akut Apendisit" olarak belirtilmiştir. İki teşhis uyuşmaktadır. Akut apandisit, appendiksin iltihaplanması sonucu ortaya çıkan bir durumdur ve genellikle "apendisit" olarak adlandırılır. Teşhisler aynı durumu işaret etmektedir.

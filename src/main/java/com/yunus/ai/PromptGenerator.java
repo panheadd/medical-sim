@@ -1,7 +1,9 @@
 package com.yunus.ai;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.List;
+import java.util.Map;
 
 public class PromptGenerator {
     private static PromptGenerator promptGenerator;
@@ -39,7 +41,15 @@ public class PromptGenerator {
         RARE
     }
     private String category;
-    private final String basePrompt = "Sen bir hasta rolündesin. Kullanıcı tıp öğrencisi ve seninle konuşarak hastalığı teşhis edecek. Hasta rolünde konuş, sorulara hastaymış gibi cevap ver. Gerçekçi davran, Rolü asla bırakma, karakterde kal. Konuşmayı doğal sürdür.";
+    private final String basePrompt;
+    {
+        try {
+            basePrompt = PromptLoader.load("base_prompt.txt");
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private String finalPrompt;
     private Mood1 mood1 = Mood1.NORMAL ;
     private Mood2 mood2 = Mood2.NORMAL;
@@ -85,27 +95,23 @@ public class PromptGenerator {
         System.out.println(d.getName());
         finalPrompt = basePrompt;
 
-        String finalPrompt = basePrompt + "\n\n" +
-                "Aşağıdaki bilgiler sadece senin içindir ve kullanıcıya asla direkt söyleme. " +
-                "Sadece davranış ve semptomlarınla hissettir.\n\n" +
-                "--- HASTA PROFİLİ ---\n" +
-                "Hastalık Adı: " + d.getName() + "\n" +
-                "Hastalık Semptomları: " + String.join(", ", d.getSymptoms()) + "\n" +
-                "Hastalık Açıklaması: " + d.getDescription() + "\n" +
-                "---------------------\n\n" +
-                "Bu bilgiler ışığında gerçek bir hasta gibi konuş.\n" +
-                "Bilgileri direkt söyleme.\n\n" +
+        Map<String, String> variables = Map.of(
+                "CATEGORY", category,
+                "DISEASE_NAME", d.getName(),
+                "SYMPTOMS", String.join(", ", d.getSymptoms()),
+                "DESCRIPTION", d.getDescription()
+        );
 
-                "Bu hastalığa tıbben uygun olan ek semptomlar üretebilirsin.\n" +
-                "Ancak:\n" +
-                "- Temel semptomlarla uyumlu olmalı,\n" +
-                "- Hastalığın tıbbi tablosuna uygun olmalı,\n" +
-                "- Abartılı veya alışılmadık semptomlar uydurma,\n" +
-                "- \"Semptom uyduruyorum\" demeden doğal bir hasta gibi davran.\n\n" +
+        String patientProfilePrompt;
 
-                "Cevaplarında sadece hastanın deneyimini anlat.\n" +
-                "Hastalığın adını veya tıbbi bilgileri söyleme.\n" +
-                "Sadece bir hasta gibi cevap ver.\n";
+        try {
+             patientProfilePrompt =
+                    PromptLoader.loadAndReplace("patient_profile_prompt.txt", variables);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        String finalPrompt = basePrompt + "\n\n" + patientProfilePrompt;
 
         if (generateMoodPrompt() != null){
             finalPrompt = finalPrompt+generateMoodPrompt();
@@ -234,12 +240,28 @@ public class PromptGenerator {
     }
 
     public String generateDiagnosisMessage(String diagnosis){
-        return
-                "Doktorun teşhisi: " + diagnosis + "\n" +
-                        "Gerçek hastalık: " + d.getName() + "\n\n" +
-                        "Bu iki teşhis uyuşuyor mu? " +
-                        "Gerçek hastalık ile doktorun verdiği teşhisi karşılaştır. " +
-                        "3. şahıs ağzıyla, resmi ve kısa bir açıklama yap.";
+        Map<String, String> vars = Map.of(
+                "DOCTOR_DIAGNOSIS", diagnosis,
+                "REAL_DISEASE", d.getName()
+        );
+
+        try {
+            return PromptLoader.loadAndReplace(
+                    "diagnosis_feedback_prompt.txt",
+                    vars
+            );
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String generateSystemBreakPrompt(){
+
+        try {
+            return  PromptLoader.load("system_break_prompt.txt");
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public Disease getD() {

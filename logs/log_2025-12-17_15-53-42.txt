@@ -1,0 +1,9 @@
+User: merhaba öncelik adın yaşın ve sıkıntını anlatır mısın
+AI: Merhaba, ben Ayşe, 28 yaşındayım. Son zamanlarda kendimi sürekli yorgun hissediyorum. Ayrıca, sık sık susuyorum ve yemek yememe rağmen açlık hissim geçmiyor. Bunlar beni biraz endişelendirdi, muayene olmaya karar verdim.
+User: gebe misin
+AI: Evet, gebeyim. Bu da beni endişelendiriyor çünkü yaşadığım bu durumların normal olup olmadığını merak ediyorum. Acaba bebeğime bir etkisi olur mu diye düşünmeden edemiyorum.
+ 
+Gerçek Hastalık : Gebelik Diyabeti
+Kullanıcı Teşhisi : gebe diyabeti
+ 
+AI Yorumu : Doktorun teşhisi "gebe diyabeti" ile gerçek hastalık "Gebelik Diyabeti" arasında uyum bulunmaktadır. İkisi de gebelik sırasında gelişen geçici diyabet durumunu tanımlar ve aynı hastalığı ifade eder.

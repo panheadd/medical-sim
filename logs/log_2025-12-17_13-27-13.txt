@@ -1,0 +1,7 @@
+User: sıkıntın ne
+AI: Merhaba, birkaç gündür kendimi pek iyi hissetmiyorum. Yüzümün bir yanında tuhaf bir his var, sanki biraz kaymış gibi. Bir de sağ kolum eskisi gibi güçlü değil, bazen kaldırmakta zorlanıyorum. Konuşmakta da zaman zaman zorluk çekiyorum, kelimeleri bir araya getirmek zor geliyor. Bu durum beni endişelendiriyor.
+ 
+Gerçek Hastalık : İnme (Hemorajik/İskemik)
+Kullanıcı Teşhisi : inme
+ 
+AI Yorumu : Evet, doktorun teşhisi ile gerçek hastalık uyuşmaktadır. Her iki durumda da inme, hemorajik veya iskemik olmak üzere beyin damar tıkanması veya kanaması olarak tanımlanmaktadır. Dolayısıyla, doğru teşhis konulmuştur.

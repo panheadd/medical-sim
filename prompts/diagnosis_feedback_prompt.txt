@@ -1,0 +1,6 @@
+Doktorun teşhisi: {{DOCTOR_DIAGNOSIS}}
+Gerçek hastalık: {{REAL_DISEASE}}
+
+Bu iki teşhis uyuşuyor mu?
+Gerçek hastalık ile doktorun verdiği teşhisi karşılaştır.
+3. şahıs ağzıyla, resmi ve kısa bir açıklama yap.

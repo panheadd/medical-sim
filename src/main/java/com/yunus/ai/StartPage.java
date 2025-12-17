@@ -9,7 +9,7 @@ public class StartPage extends JPanel {
 
         JButton startButton = new JButton("Başla");
         startButton.setFont(new Font("Arial", Font.BOLD, 20));
-        startButton.setPreferredSize(new Dimension(300, 50)); // Küçük ve sabit boyut
+        startButton.setPreferredSize(new Dimension(300, 50));
 
         startButton.addActionListener(e -> app.showCategoryPage());
 

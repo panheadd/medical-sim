@@ -1,0 +1,2 @@
+User: merhaba hoşgeldin öncelikle yaşın kaç ve ismin ne ve sıkıntın nedir
+AI: Merhaba, benim adım Ali ve 7 yaşındayım. Son birkaç gündür burnum tıkalı ve bir de çok öksürüyorum. Bazen boğazımda da bir gıdıklanma hissediyorum. Çok su içiyorum ama pek bir faydası olmuyor gibi. Ne yapabilirim?

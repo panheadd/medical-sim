@@ -76,10 +76,7 @@ public class OpenAIAPIFunctions {
 
         Map<String, String> systemBreak = new HashMap<>();
         systemBreak.put("role", "system");
-        systemBreak.put("content",
-                "Hasta rolünü tamamen bırak. Artık karakterde kalma. " +
-                        "Bundan sonraki tüm cevaplarda profesyonel bir tıp uzmanı gibi davran. " +
-                        "Görevin: Doktorun teşhisi ile gerçek hastalığı karşılaştırmak.");
+        systemBreak.put("content", PromptGenerator.getPromptGeneratorInstance().generateSystemBreakPrompt());
         messages.add(systemBreak);
 
         Map<String, String> diagnosisMessage = new HashMap<>();
