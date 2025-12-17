@@ -1,4 +1,7 @@
-package com.yunus.ai;
+package com.yunus.ai.gui;
+
+import com.yunus.ai.openaiService.OpenAIAPIFunctions;
+import com.yunus.ai.audio.AudioRecorder;
 
 import javax.sound.sampled.AudioFileFormat;
 import javax.sound.sampled.AudioSystem;

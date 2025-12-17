@@ -1,4 +1,4 @@
-package com.yunus.ai;
+package com.yunus.ai.disease;
 import java.util.List;
 
 public class Disease {

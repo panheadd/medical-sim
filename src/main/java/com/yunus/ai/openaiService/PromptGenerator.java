@@ -1,4 +1,9 @@
-package com.yunus.ai;
+package com.yunus.ai.openaiService;
+
+import com.yunus.ai.disease.Disease;
+import com.yunus.ai.disease.DiseaseFinder;
+import com.yunus.ai.disease.DiseaseLoader;
+import com.yunus.ai.util.PromptLoader;
 
 import java.io.FileNotFoundException;
 import java.util.Map;
@@ -7,12 +12,12 @@ public class PromptGenerator {
     private static PromptGenerator promptGenerator;
     private Disease d;
 
-    enum Difficulty{
+     public enum Difficulty{
         EASY,
         NORMAL,
         HARD
     }
-    enum Rarity{
+    public enum Rarity{
         COMMON,
         NORMAL,
         RARE

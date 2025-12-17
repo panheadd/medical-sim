@@ -1,7 +1,8 @@
-package com.yunus.ai;
+package com.yunus.ai.disease;
 
 
 import com.google.gson.Gson;
+import com.yunus.ai.util.PathUtils;
 
 import java.io.File;
 import java.io.FileReader;

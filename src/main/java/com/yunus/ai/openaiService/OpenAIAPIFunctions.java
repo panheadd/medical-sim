@@ -1,5 +1,7 @@
-package com.yunus.ai;
+package com.yunus.ai.openaiService;
 
+import com.yunus.ai.util.EnvLoader;
+import com.yunus.ai.util.Logger;
 import javazoom.jl.player.Player;
 import okhttp3.*;
 import com.google.gson.*;

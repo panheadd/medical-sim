@@ -1,4 +1,7 @@
-package com.yunus.ai;
+package com.yunus.ai.gui;
+
+import com.yunus.ai.openaiService.OpenAIAPIFunctions;
+import com.yunus.ai.openaiService.PromptGenerator;
 
 import javax.swing.*;
 import java.awt.*;

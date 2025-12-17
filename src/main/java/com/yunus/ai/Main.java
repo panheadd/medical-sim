@@ -1,6 +1,6 @@
 package com.yunus.ai;
 
-import java.util.List;
+import com.yunus.ai.gui.MedicalSimApp;
 
 public class Main {
     public static void main(String[] args) {

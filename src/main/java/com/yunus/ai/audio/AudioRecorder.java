@@ -1,4 +1,4 @@
-package com.yunus.ai;
+package com.yunus.ai.audio;
 import javax.sound.sampled.*;
 import java.io.*;
 

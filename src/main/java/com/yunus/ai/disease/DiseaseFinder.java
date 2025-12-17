@@ -1,4 +1,8 @@
-package com.yunus.ai;
+package com.yunus.ai.disease;
+
+import com.yunus.ai.disease.Disease;
+import com.yunus.ai.disease.DiseaseCategory;
+import com.yunus.ai.disease.DiseaseData;
 
 import java.util.*;
 import java.util.stream.Collectors;

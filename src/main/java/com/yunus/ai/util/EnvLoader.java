@@ -1,4 +1,6 @@
-package com.yunus.ai;
+package com.yunus.ai.util;
+
+import com.yunus.ai.util.PathUtils;
 
 import java.io.*;
 import java.util.HashMap;
