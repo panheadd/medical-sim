@@ -1,5 +1,4 @@
 package com.yunus.ai;
-
 import com.yunus.ai.gui.MedicalSimApp;
 
 public class Main {

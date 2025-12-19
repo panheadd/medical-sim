@@ -1,5 +1,6 @@
 package com.yunus.ai.gui;
 
+import com.yunus.ai.lang.LanguageManager;
 import com.yunus.ai.openaiService.OpenAIAPIFunctions;
 import com.yunus.ai.openaiService.PromptGenerator;
 
@@ -11,12 +12,13 @@ public class MedicalSimApp extends JFrame {
     private PromptGenerator promptGenerator = PromptGenerator.getPromptGeneratorInstance();
     private CardLayout cardLayout;
     private JPanel mainPanel;
+    private StartPage startPage;
     private ChatPage chatPage;
     private CategoryPage categoryPage;
     private SettingsPage settingsPage;
 
     public MedicalSimApp() {
-        super("Medical-Sim");
+        super(LanguageManager.t("app.title"));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 1000);
         setLocationRelativeTo(null);
@@ -24,7 +26,7 @@ public class MedicalSimApp extends JFrame {
         cardLayout = new CardLayout();
         mainPanel = new JPanel(cardLayout);
 
-        StartPage startPage = new StartPage(this);
+        startPage = new StartPage(this);
         categoryPage = new CategoryPage(this);
         chatPage = new ChatPage(this);
         settingsPage = new SettingsPage(this);
@@ -43,7 +45,7 @@ public class MedicalSimApp extends JFrame {
         openAIAPIFunctions.resetMessages();
     }
 
-    public void showMoodPage(String categoryName){
+    public void showSettingsPage(String categoryName){
         promptGenerator.setCategory(categoryName);
         chatPage.setCategory(categoryName);
         cardLayout.show(mainPanel, "mood");
@@ -57,5 +59,11 @@ public class MedicalSimApp extends JFrame {
 
     public void startApp(){
         SwingUtilities.invokeLater(() -> new MedicalSimApp().setVisible(true));
+    }
+
+    public void refreshTexts(){
+        startPage.refreshTexts();
+        categoryPage.refreshTexts();
+        settingsPage.refreshTexts();
     }
 }

@@ -4,3 +4,7 @@ Gerçek hastalık: {{REAL_DISEASE}}
 Bu iki teşhis uyuşuyor mu?
 Gerçek hastalık ile doktorun verdiği teşhisi karşılaştır.
 3. şahıs ağzıyla, resmi ve kısa bir açıklama yap.
+
+IMPORTANT RULE:
+You must ALWAYS respond in {{LANGUAGE}}.
+Never use any other language.

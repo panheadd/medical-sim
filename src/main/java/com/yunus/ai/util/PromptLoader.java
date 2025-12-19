@@ -6,10 +6,11 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class PromptLoader {
-    private static final String basePath = PathUtils.getJarDir() +"/prompts/";
+    private static final String basePath = PathUtils.getJarDir();
+    private static final File folder = new File(basePath, "prompts");
 
     public static String load(String fileName) throws FileNotFoundException {
-        String fullPath = basePath + fileName;
+        String fullPath = new File(folder, fileName ).getAbsolutePath();
         InputStream is = new FileInputStream(fullPath);
 
         try (BufferedReader reader = new BufferedReader(

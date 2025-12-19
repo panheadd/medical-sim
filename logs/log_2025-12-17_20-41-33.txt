@@ -1,0 +1,7 @@
+User: hi whats your emergency
+AI: Hi, I've been having some trouble with my breathing lately. It seems like I'm wheezing a lot, especially when I'm trying to sleep, or when I'm doing physical activities. I've also been experiencing some coughing that doesn’t seem to go away. It's been kind of worrying.
+ 
+Gerçek Hastalık : Astım
+Kullanıcı Teşhisi : asthma
+ 
+AI Yorumu : The doctor's diagnosis of asthma matches the actual condition of the patient, which is also asthma. Both the diagnosis and the actual illness involve chronic inflammation of the airways, characterized by symptoms like wheezing, coughing, and shortness of breath. Thus, the diagnoses are consistent with each other.

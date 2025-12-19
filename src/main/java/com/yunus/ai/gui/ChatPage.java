@@ -2,6 +2,7 @@ package com.yunus.ai.gui;
 
 import com.yunus.ai.openaiService.OpenAIAPIFunctions;
 import com.yunus.ai.audio.AudioRecorder;
+import com.yunus.ai.lang.LanguageManager;
 
 import javax.sound.sampled.AudioFileFormat;
 import javax.sound.sampled.AudioSystem;
@@ -35,7 +36,7 @@ public class ChatPage extends JPanel {
         backButton.addActionListener(e -> app.showCategoryPage());
         topPanel.add(backButton, BorderLayout.WEST);
 
-        chatHeader = new JLabel("Sohbet", SwingConstants.CENTER);
+        chatHeader = new JLabel(LanguageManager.t("chat.title"), SwingConstants.CENTER);
         chatHeader.setFont(new Font("Arial", Font.BOLD, 18));
         topPanel.add(chatHeader, BorderLayout.CENTER);
 
@@ -46,7 +47,7 @@ public class ChatPage extends JPanel {
         finishButton.addActionListener(e -> {
 
             JPanel panel = new JPanel(new BorderLayout(5,5));
-            JLabel label = new JLabel("Teşhis girin:");
+            JLabel label = new JLabel(LanguageManager.t("diagnosis.entry") +":");
             JTextField textField = new JTextField(15);
             panel.add(label, BorderLayout.NORTH);
             panel.add(textField, BorderLayout.CENTER);
@@ -54,7 +55,7 @@ public class ChatPage extends JPanel {
             int result = JOptionPane.showConfirmDialog(
                     null,
                     panel,
-                    "Teşhis Girişi",
+                    LanguageManager.t("diagnosis.title"),
                     JOptionPane.OK_CANCEL_OPTION,
                     JOptionPane.PLAIN_MESSAGE,
                     null
@@ -79,7 +80,7 @@ public class ChatPage extends JPanel {
                         JOptionPane.showMessageDialog(
                                 null,
                                 scrollPane,
-                                "AI Yorumu",
+                                LanguageManager.t("text.ai"),
                                 JOptionPane.PLAIN_MESSAGE
                         );
 
@@ -90,8 +91,8 @@ public class ChatPage extends JPanel {
                 } else {
                     JOptionPane.showMessageDialog(
                             null,
-                            "Teşhis alanı boş bırakılamaz.",
-                            "Uyarı",
+                            LanguageManager.t("text.empty"),
+                            LanguageManager.t("warning.title"),
                             JOptionPane.PLAIN_MESSAGE
                     );
                 }
@@ -118,12 +119,12 @@ public class ChatPage extends JPanel {
         sendButton.addActionListener(e -> {
             String msg = inputField.getText().trim();
             if (!msg.isEmpty()) {
-                chatArea.append("Sen: " + msg + "\n"+"\n");
+                chatArea.append(LanguageManager.t("text.user")+":" + msg + "\n"+"\n");
                 openAIAPIFunctions.addUserMessage(msg);
                 inputField.setText("");
                 try {
                     String response = openAIAPIFunctions.createRequestBodyAndReturnResponse();
-                    chatArea.append(category + " AI: " + response+"\n");
+                    chatArea.append(" AI: " + response+"\n"+"\n");
                     if (ttsEnabled){
                         openAIAPIFunctions.toTTs(response);
                     }
@@ -144,10 +145,10 @@ public class ChatPage extends JPanel {
             ttsEnabled = !ttsEnabled;
             if (ttsEnabled) {
                 ttsButton.setText("🟢 TTS");
-                System.out.println("TTS Açıldı");
+
             } else {
                 ttsButton.setText("🔴 TTS");
-                System.out.println("TTS Kapatıldı");
+
             }
         });
 
@@ -162,7 +163,7 @@ public class ChatPage extends JPanel {
             audioRecording = !audioRecording;
             if (audioRecording) {
                 audioButton.setText("🟢 \uD83C\uDFA4︎︎");
-                System.out.println("\uD83C\uDFA4 Açıldı");
+
                 try {
                     recorder.startRecording();
                 } catch (LineUnavailableException ex) {
@@ -180,7 +181,7 @@ public class ChatPage extends JPanel {
                 }
                 byte[] wavBytes = wavOut.toByteArray();
 
-                System.out.println("\uD83C\uDFA4 Kapatıldı");
+
                 String text;
                 try {
                     text = openAIAPIFunctions.transcribe(wavBytes);
@@ -189,12 +190,12 @@ public class ChatPage extends JPanel {
                 }
                 String msg = text.trim();
                 if (!msg.isEmpty()) {
-                    chatArea.append("Sen: " + msg + "\n"+"\n");
+                    chatArea.append(LanguageManager.t("text.user")+":" + msg + "\n"+"\n");
                     openAIAPIFunctions.addUserMessage(msg);
                     inputField.setText("");
                     try {
                         String response = openAIAPIFunctions.createRequestBodyAndReturnResponse();
-                        chatArea.append(category + " AI: " + response+"\n");
+                        chatArea.append(" AI: " + response+"\n");
                         if (ttsEnabled){
                             openAIAPIFunctions.toTTs(response);
                         }
@@ -213,13 +214,12 @@ public class ChatPage extends JPanel {
         inputPanel.add(inputField, BorderLayout.CENTER);
         inputPanel.add(rightPanel, BorderLayout.EAST);
 
-
         add(inputPanel, BorderLayout.SOUTH);
     }
 
     public void setCategory(String category) {
         this.category = category;
-        chatHeader.setText(category + " - Sohbet");
+        chatHeader.setText( LanguageManager.t("chat.title"));
         chatArea.setText("");
         openAIAPIFunctions.resetMessages();
     }

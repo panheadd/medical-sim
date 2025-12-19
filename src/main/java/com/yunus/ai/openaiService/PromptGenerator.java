@@ -3,6 +3,7 @@ package com.yunus.ai.openaiService;
 import com.yunus.ai.disease.Disease;
 import com.yunus.ai.disease.DiseaseFinder;
 import com.yunus.ai.disease.DiseaseLoader;
+import com.yunus.ai.lang.LanguageManager;
 import com.yunus.ai.util.PromptLoader;
 
 import java.io.FileNotFoundException;
@@ -64,7 +65,8 @@ public class PromptGenerator {
                 "CATEGORY", category,
                 "DISEASE_NAME", d.getName(),
                 "SYMPTOMS", String.join(", ", d.getSymptoms()),
-                "DESCRIPTION", d.getDescription()
+                "DESCRIPTION", d.getDescription(),
+                "LANGUAGE", LanguageManager.getAiLanguageName()
         );
 
         String patientProfilePrompt;
@@ -93,7 +95,8 @@ public class PromptGenerator {
     public String generateDiagnosisMessage(String diagnosis){
         Map<String, String> vars = Map.of(
                 "DOCTOR_DIAGNOSIS", diagnosis,
-                "REAL_DISEASE", d.getName()
+                "REAL_DISEASE", d.getName(),
+                "LANGUAGE",LanguageManager.getAiLanguageName()
         );
 
         try {

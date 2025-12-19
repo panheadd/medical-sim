@@ -1,0 +1,2 @@
+User: hi what is your problem
+AI: Merhaba, son zamanlarda midemde bir ağrı hissediyorum. Özellikle yemek yedikten sonra bu ağrı daha belirgin hale geliyor ve bir yanma hissi de eşlik ediyor. Ayrıca bazen mide bulantısı da yaşıyorum. Bu durum beni oldukça rahatsız ediyor. Ne olduğunu anlamak için yardımınıza ihtiyacım var.

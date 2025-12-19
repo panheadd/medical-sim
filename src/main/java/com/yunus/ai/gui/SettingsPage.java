@@ -1,12 +1,22 @@
 package com.yunus.ai.gui;
 
 import com.yunus.ai.openaiService.PromptGenerator;
+import com.yunus.ai.lang.LanguageManager;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class SettingsPage extends JPanel {
     PromptGenerator promptGenerator = PromptGenerator.getPromptGeneratorInstance();
+
+    private JRadioButton easyButton;
+    private JRadioButton normalbutton5;
+    private JRadioButton hardButton;
+    private JRadioButton commonButton;
+    private JRadioButton normalbutton6;
+    private JRadioButton rareButton;
+    private JLabel hastalikSubTitle;
+    private JButton okButton;
     public SettingsPage(MedicalSimApp app){
         setLayout(new BorderLayout());
 
@@ -21,10 +31,6 @@ public class SettingsPage extends JPanel {
         topPanel.add(backButton, BorderLayout.WEST);
 
 
-
-        JLabel titleLabel = new JLabel("Kişilik", SwingConstants.CENTER);
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 18));
-        //topPanel.add(titleLabel,BorderLayout.CENTER);
         add(topPanel, BorderLayout.NORTH);
 
         JPanel centerPanel = new JPanel();
@@ -36,9 +42,9 @@ public class SettingsPage extends JPanel {
 
 
         JPanel row5 = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        JRadioButton easyButton = new JRadioButton("Kolay");
-        JRadioButton normalbutton5 = new JRadioButton("Normal");
-        JRadioButton hardButton = new JRadioButton("Zor");
+         easyButton = new JRadioButton(LanguageManager.t("button.easy"));
+         normalbutton5 = new JRadioButton(LanguageManager.t("button.normal"));
+         hardButton = new JRadioButton(LanguageManager.t("button.hard"));
         easyButton.setFont(moodFont);
         normalbutton5.setFont(moodFont);
         hardButton.setFont(moodFont);
@@ -58,9 +64,9 @@ public class SettingsPage extends JPanel {
 
 
         JPanel row6 = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        JRadioButton commonButton = new JRadioButton("Yaygın");
-        JRadioButton normalbutton6 = new JRadioButton("Normal");
-        JRadioButton rareButton = new JRadioButton("Ender");
+         commonButton = new JRadioButton(LanguageManager.t("button.common"));
+         normalbutton6 = new JRadioButton(LanguageManager.t("button.normal1"));
+         rareButton = new JRadioButton(LanguageManager.t("button.rare"));
         commonButton.setFont(moodFont);
         normalbutton6.setFont(moodFont);
         rareButton.setFont(moodFont);
@@ -78,7 +84,7 @@ public class SettingsPage extends JPanel {
         row6.add(normalbutton6);
         row6.add(rareButton);
 
-        JLabel hastalikSubTitle = new JLabel("Hastalık Özellikleri");
+        hastalikSubTitle = new JLabel(LanguageManager.t("setting.title"));
         hastalikSubTitle.setFont(new Font("Arial", Font.BOLD, 20));
         hastalikSubTitle.setBorder(BorderFactory.createEmptyBorder(15, 0, 10, 0));
         hastalikSubTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -92,7 +98,7 @@ public class SettingsPage extends JPanel {
         add(centerPanel, BorderLayout.CENTER);
 
 
-        JButton okButton = new JButton("Tamam");
+        okButton = new JButton(LanguageManager.t("button.ok"));
         okButton.setFont(new Font("Arial", Font.PLAIN, 18));
         okButton.setPreferredSize(new Dimension(100, 40));
         okButton.addActionListener(e -> app.openChat());
@@ -100,5 +106,15 @@ public class SettingsPage extends JPanel {
         add(okButton,BorderLayout.SOUTH);
 
 
+    }
+    public void refreshTexts() {
+        easyButton.setText(LanguageManager.t("button.easy"));
+        normalbutton5.setText(LanguageManager.t("button.normal"));
+        hardButton.setText(LanguageManager.t("button.hard"));
+        commonButton.setText(LanguageManager.t("button.common"));
+        normalbutton6.setText(LanguageManager.t("button.normal1"));
+        rareButton.setText(LanguageManager.t("button.rare"));
+        hastalikSubTitle.setText(LanguageManager.t("setting.title"));
+        okButton.setText(LanguageManager.t("button.ok"));
     }
 }
